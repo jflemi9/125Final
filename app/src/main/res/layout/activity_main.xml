@@ -9,10 +9,19 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="INSTRUCTIONS: "
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/inst" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="Welcome to the game!"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:id="@+id/textView" />
+        android:id="@+id/textView"
+        android:layout_below="@+id/inst"/>
     <Button
         android:id="@+id/startGame"
         android:layout_width="wrap_content"

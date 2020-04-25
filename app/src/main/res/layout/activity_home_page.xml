@@ -7,18 +7,27 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welcome to the game!"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:id="@+id/textView" />
+        android:text="The game has been started"
+        android:layout_centerHorizontal="true" />
+
     <Button
-        android:id="@+id/startGame"
+        android:id="@+id/room1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="START GAME"
+        android:text="Try the left door handle"
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/room2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Try the right door handle"
+        android:layout_below="@+id/room1"
+        android:layout_centerHorizontal="true" />
+
 
 </RelativeLayout>

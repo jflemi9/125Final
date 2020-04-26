@@ -7,11 +7,19 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/oxygenLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your oxygen levels:"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="The game has been started"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/oxygenLevel"/>
 
     <Button
         android:id="@+id/goNorth"

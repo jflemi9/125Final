@@ -6,17 +6,22 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class homePage extends AppCompatActivity {
     private Button north;
     private Button south;
     private Button east;
     private Button west;
+    private TextView oxygenPercentage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
+
+        oxygenPercentage = findViewById(R.id.oxygenLevel);
+        oxygenPercentage.setText(PlayerInfo.checkOxygenPercentage());
 
         north = findViewById(R.id.goNorth);
         south = findViewById(R.id.goSouth);

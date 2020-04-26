@@ -8,7 +8,6 @@ import android.view.View;
 import android.widget.Button;
 
 public class NorthTwo extends AppCompatActivity {
-    // checkpoint 3
     private Button home;
     private Button proceed;
 
@@ -29,12 +28,11 @@ public class NorthTwo extends AppCompatActivity {
         proceed.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //if (PlayerInfo.checkItemThree()) {
-                advanceSuccess();
-                //} else {
-                //    advanceFail();
-                //}
-
+                if (PlayerInfo.checkItemThree()) {
+                    advanceSuccess();
+                } else {
+                    advanceFail();
+                }
             }
         });
     }

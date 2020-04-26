@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".WestOne"></activity>
+        <activity android:name=".NorthEnd"></activity>
+        <activity android:name=".NorthFour" />
+        <activity android:name=".NorthThreeFail" />
+        <activity android:name=".NorthThreeSucceed" />
+        <activity android:name=".NorthTwo" />
+        <activity android:name=".WestOne" />
         <activity android:name=".EastOne" />
         <activity android:name=".SouthOne" />
         <activity android:name=".NorthOne" />

@@ -41,8 +41,5 @@
         android:text="West"
         android:layout_below="@+id/goEast"
         android:layout_centerHorizontal="true" />
-
-
-
-
+    
 </RelativeLayout>

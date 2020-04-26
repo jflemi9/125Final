@@ -7,16 +7,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class NorthOne extends AppCompatActivity {
+public class NorthThreeFail extends AppCompatActivity {
     private Button home;
-    private Button proceed;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_north_one);
-
-        PlayerInfo.obtainedItemOne();
+        setContentView(R.layout.activity_north_three_fail);
 
         home = findViewById(R.id.backHome);
         home.setOnClickListener(new View.OnClickListener() {
@@ -25,19 +22,6 @@ public class NorthOne extends AppCompatActivity {
                 returnHome();
             }
         });
-
-        proceed = findViewById(R.id.proceed);
-        proceed.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                advanceSuccess();
-            }
-        });
-    }
-
-    public void advanceSuccess() {
-        Intent intent = new Intent(this, NorthTwo.class);
-        startActivity(intent);
     }
 
     public void returnHome() {

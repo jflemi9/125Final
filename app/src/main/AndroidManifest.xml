@@ -9,8 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".room2"></activity>
-        <activity android:name=".room1" />
+        <activity android:name=".WestOne"></activity>
+        <activity android:name=".EastOne" />
+        <activity android:name=".SouthOne" />
+        <activity android:name=".NorthOne" />
         <activity android:name=".homePage" />
         <activity android:name=".MainActivity">
             <intent-filter>

@@ -8,39 +8,63 @@ import android.view.View;
 import android.widget.Button;
 
 public class homePage extends AppCompatActivity {
-    private Button room1;
-    private Button room2;
+    private Button north;
+    private Button south;
+    private Button east;
+    private Button west;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
 
-        room1 = findViewById(R.id.room1);
-        room2 = findViewById(R.id.room2);
+        north = findViewById(R.id.goNorth);
+        south = findViewById(R.id.goSouth);
+        east = findViewById(R.id.goEast);
+        west = findViewById(R.id.goWest);
 
-        room1.setOnClickListener(new View.OnClickListener() {
+        north.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                enterRoom1();
+                advanceNorth();
             }
         });
 
-        room2.setOnClickListener(new View.OnClickListener() {
+        south.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                enterRoom2();
+                advanceSouth();
+            }
+        });
+
+        east.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                advanceEast();
+            }
+        });
+
+        west.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                advanceWest();
             }
         });
     }
-
-    public void enterRoom1() {
-        Intent intent = new Intent(this, room1.class);
+    public void advanceNorth() {
+        Intent intent = new Intent(this, NorthOne.class);
         startActivity(intent);
     }
-
-    public void enterRoom2() {
-        Intent intent = new Intent(this, room2.class);
+    public void advanceSouth() {
+        Intent intent = new Intent(this, SouthOne.class);
+        startActivity(intent);
+    }
+    public void advanceEast() {
+        Intent intent = new Intent(this, EastOne.class);
+        startActivity(intent);
+    }
+    public void advanceWest() {
+        Intent intent = new Intent(this, WestOne.class);
         startActivity(intent);
     }
 }

@@ -7,14 +7,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class NorthTwo extends AppCompatActivity {
+public class NorthTwoSucceed extends AppCompatActivity {
     private Button home;
     private Button proceed;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_north_two);
+        setContentView(R.layout.activity_north_two_succeed);
 
         home = findViewById(R.id.backHome);
         home.setOnClickListener(new View.OnClickListener() {
@@ -32,18 +32,10 @@ public class NorthTwo extends AppCompatActivity {
         proceed.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (PlayerInfo.checkItemThree()) {
-                    if (PlayerInfo.movement()) {
-                        advanceSuccess();
-                    } else {
-                        gameOver();
-                    }
+                if (PlayerInfo.movement()) {
+                    advanceSucceed();
                 } else {
-                    if (PlayerInfo.movement()) {
-                        advanceFail();
-                    } else {
-                        gameOver();
-                    }
+                    gameOver();
                 }
             }
         });
@@ -52,17 +44,12 @@ public class NorthTwo extends AppCompatActivity {
         Intent intent = new Intent(this, homePage.class);
         startActivity(intent);
     }
-    public void advanceSuccess() {
-        Intent intent = new Intent(this, NorthThreeSucceed.class);
-        startActivity(intent);
-    }
-    public void advanceFail() {
-        Intent intent = new Intent(this, NorthThreeFail.class);
+    public void advanceSucceed() {
+        Intent intent = new Intent(this, NorthThree.class);
         startActivity(intent);
     }
     public void gameOver() {
         Intent intent = new Intent(this, GameOver.class);
         startActivity(intent);
     }
-    //Intent passed = new Intent(this, NorthThree);
 }

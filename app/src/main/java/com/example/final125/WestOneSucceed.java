@@ -7,14 +7,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class NorthThreeSucceed extends AppCompatActivity {
+public class WestOneSucceed extends AppCompatActivity {
     private Button home;
     private Button proceed;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_north_three_succeed);
+        setContentView(R.layout.activity_west_one_succeed);
 
         home = findViewById(R.id.backHome);
         home.setOnClickListener(new View.OnClickListener() {
@@ -45,7 +45,7 @@ public class NorthThreeSucceed extends AppCompatActivity {
         startActivity(intent);
     }
     public void advanceSucceed() {
-        Intent intent = new Intent(this, NorthFour.class);
+        Intent intent = new Intent(this, WestTwo.class);
         startActivity(intent);
     }
     public void gameOver() {

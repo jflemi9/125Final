@@ -73,7 +73,11 @@ public class homePage extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (PlayerInfo.movement()) {
-                    advanceWest();
+                    if (PlayerInfo.checkItemOne()) {
+                        westAdvanceSuccess();
+                    } else {
+                        westAdvanceFail();
+                    }
                 } else {
                     gameOver();
                 }
@@ -92,11 +96,14 @@ public class homePage extends AppCompatActivity {
         Intent intent = new Intent(this, EastOne.class);
         startActivity(intent);
     }
-    public void advanceWest() {
-        Intent intent = new Intent(this, WestOne.class);
+    public void westAdvanceSuccess() {
+        Intent intent = new Intent(this, WestOneSucceed.class);
         startActivity(intent);
     }
-
+    public void westAdvanceFail() {
+        Intent intent = new Intent(this, WestOneFail.class);
+        startActivity(intent);
+    }
     public void gameOver() {
         Intent intent = new Intent(this, GameOver.class);
         startActivity(intent);

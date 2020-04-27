@@ -7,13 +7,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class NorthThreeFail extends AppCompatActivity {
+public class WestOneFail extends AppCompatActivity {
     private Button home;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_north_three_fail);
+        setContentView(R.layout.activity_west_one_fail);
 
         if (!PlayerInfo.badEnd()) {
             gameOver();
@@ -23,15 +23,10 @@ public class NorthThreeFail extends AppCompatActivity {
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (PlayerInfo.movement()) {
-                    returnHome();
-                } else {
-                    gameOver();
-                }
+                returnHome();
             }
         });
     }
-
     public void returnHome() {
         Intent intent = new Intent(this, homePage.class);
         startActivity(intent);

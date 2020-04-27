@@ -30,6 +30,7 @@ public class NorthFour extends AppCompatActivity {
         proceed.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                PlayerInfo.movement();
                 advanceSuccess();
             }
         });

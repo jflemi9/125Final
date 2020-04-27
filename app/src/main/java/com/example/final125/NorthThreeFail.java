@@ -15,6 +15,8 @@ public class NorthThreeFail extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_north_three_fail);
 
+        PlayerInfo.badEnd();
+
         home = findViewById(R.id.backHome);
         home.setOnClickListener(new View.OnClickListener() {
             @Override

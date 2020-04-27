@@ -2,11 +2,14 @@ package com.example.final125;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import org.w3c.dom.Text;
 
 public class homePage extends AppCompatActivity {
     private Button north;
@@ -15,13 +18,16 @@ public class homePage extends AppCompatActivity {
     private Button west;
     private TextView oxygenPercentage;
 
+    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
 
+        PlayerInfo player = new PlayerInfo();
+
         oxygenPercentage = findViewById(R.id.oxygenLevel);
-        oxygenPercentage.setText(PlayerInfo.checkOxygenPercentage());
+        oxygenPercentage.setText(PlayerInfo.checkOxygenPercentage() + "");
 
         north = findViewById(R.id.goNorth);
         south = findViewById(R.id.goSouth);
@@ -31,7 +37,9 @@ public class homePage extends AppCompatActivity {
         north.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                advanceNorth();
+                if (PlayerInfo.movement()) {
+                    advanceNorth();
+                }
             }
         });
 

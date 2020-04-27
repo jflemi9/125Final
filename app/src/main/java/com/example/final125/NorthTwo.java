@@ -29,8 +29,10 @@ public class NorthTwo extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (PlayerInfo.checkItemThree()) {
+                    PlayerInfo.movement();
                     advanceSuccess();
                 } else {
+                    PlayerInfo.movement();
                     advanceFail();
                 }
             }

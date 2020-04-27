@@ -19,13 +19,21 @@ public class NorthEnd extends AppCompatActivity {
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                returnHome();
+                if (PlayerInfo.movement()) {
+                    returnHome();
+                } else {
+                    gameOver();
+                }
             }
         });
     }
 
     public void returnHome() {
         Intent intent = new Intent(this, homePage.class);
+        startActivity(intent);
+    }
+    public void gameOver() {
+        Intent intent = new Intent(this, GameOver.class);
         startActivity(intent);
     }
 }

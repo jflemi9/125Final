@@ -9,7 +9,7 @@ public class PlayerInfo {
     private static boolean partTwo;
     private static boolean partThree;
     private static boolean partFour;
-    private static int oxygenPercentage;
+    private static int oxygenPercentage = -1000;
     private static final int costOfMovement = 1;
     private static final int costOfBadEnd = 10;
 
@@ -113,7 +113,7 @@ public class PlayerInfo {
         if (oxygenPercentage - costOfMovement <= 0) {
             return false;
         } else {
-            oxygenPercentage -= costOfMovement;
+            oxygenPercentage = oxygenPercentage - costOfMovement;
             return true;
         }
     }

@@ -20,7 +20,11 @@ public class NorthTwo extends AppCompatActivity {
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                returnHome();
+                if (PlayerInfo.movement()) {
+                    returnHome();
+                } else {
+                    gameOver();
+                }
             }
         });
 
@@ -29,11 +33,17 @@ public class NorthTwo extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (PlayerInfo.checkItemThree()) {
-                    PlayerInfo.movement();
-                    advanceSuccess();
+                    if (PlayerInfo.movement()) {
+                        advanceSuccess();
+                    } else {
+                        gameOver();
+                    }
                 } else {
-                    PlayerInfo.movement();
-                    advanceFail();
+                    if (PlayerInfo.movement()) {
+                        advanceFail();
+                    } else {
+                        gameOver();
+                    }
                 }
             }
         });
@@ -48,6 +58,10 @@ public class NorthTwo extends AppCompatActivity {
     }
     public void advanceFail() {
         Intent intent = new Intent(this, NorthThreeFail.class);
+        startActivity(intent);
+    }
+    public void gameOver() {
+        Intent intent = new Intent(this, GameOver.class);
         startActivity(intent);
     }
     //Intent passed = new Intent(this, NorthThree);

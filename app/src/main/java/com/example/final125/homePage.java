@@ -24,7 +24,9 @@ public class homePage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
 
-        PlayerInfo player = new PlayerInfo();
+        if (PlayerInfo.checkOxygenPercentage() == -1000) {
+            final PlayerInfo player = new PlayerInfo();
+        }
 
         oxygenPercentage = findViewById(R.id.oxygenLevel);
         oxygenPercentage.setText(PlayerInfo.checkOxygenPercentage() + "");
@@ -39,6 +41,8 @@ public class homePage extends AppCompatActivity {
             public void onClick(View v) {
                 if (PlayerInfo.movement()) {
                     advanceNorth();
+                } else {
+                    gameOver();
                 }
             }
         });
@@ -46,21 +50,33 @@ public class homePage extends AppCompatActivity {
         south.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                advanceSouth();
+                if (PlayerInfo.movement()) {
+                    advanceSouth();
+                } else {
+                    gameOver();
+                }
             }
         });
 
         east.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                advanceEast();
+                if (PlayerInfo.movement()) {
+                    advanceEast();
+                } else {
+                    gameOver();
+                }
             }
         });
 
         west.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                advanceWest();
+                if (PlayerInfo.movement()) {
+                    advanceWest();
+                } else {
+                    gameOver();
+                }
             }
         });
     }
@@ -78,6 +94,11 @@ public class homePage extends AppCompatActivity {
     }
     public void advanceWest() {
         Intent intent = new Intent(this, WestOne.class);
+        startActivity(intent);
+    }
+
+    public void gameOver() {
+        Intent intent = new Intent(this, GameOver.class);
         startActivity(intent);
     }
 }

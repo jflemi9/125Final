@@ -15,19 +15,29 @@ public class NorthThreeFail extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_north_three_fail);
 
-        PlayerInfo.badEnd();
+        if (!PlayerInfo.badEnd()) {
+            gameOver();
+        }
 
         home = findViewById(R.id.backHome);
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                returnHome();
+                if (PlayerInfo.movement()) {
+                    returnHome();
+                } else {
+                    gameOver();
+                }
             }
         });
     }
 
     public void returnHome() {
         Intent intent = new Intent(this, homePage.class);
+        startActivity(intent);
+    }
+    public void gameOver() {
+        Intent intent = new Intent(this, GameOver.class);
         startActivity(intent);
     }
 }

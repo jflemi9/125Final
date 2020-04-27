@@ -20,7 +20,11 @@ public class NorthThreeSucceed extends AppCompatActivity {
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                returnHome();
+                if (PlayerInfo.movement()) {
+                    returnHome();
+                } else {
+                    gameOver();
+                }
             }
         });
 
@@ -28,8 +32,11 @@ public class NorthThreeSucceed extends AppCompatActivity {
         proceed.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                PlayerInfo.movement();
-                advanceSucceed();
+                if (PlayerInfo.movement()) {
+                    advanceSucceed();
+                } else {
+                    gameOver();
+                }
             }
         });
     }
@@ -39,6 +46,10 @@ public class NorthThreeSucceed extends AppCompatActivity {
     }
     public void advanceSucceed() {
         Intent intent = new Intent(this, NorthFour.class);
+        startActivity(intent);
+    }
+    public void gameOver() {
+        Intent intent = new Intent(this, GameOver.class);
         startActivity(intent);
     }
 }

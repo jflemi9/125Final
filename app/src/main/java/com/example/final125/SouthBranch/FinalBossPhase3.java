@@ -1,4 +1,4 @@
-package com.example.final125;
+package com.example.final125.SouthBranch;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,20 +7,23 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class FinalBossPhase1 extends AppCompatActivity {
+import com.example.final125.GameOver;
+import com.example.final125.PlayerInfo;
+import com.example.final125.R;
+
+public class FinalBossPhase3 extends AppCompatActivity {
 
     private Button proceed;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_final_boss_phase1);
-
+        setContentView(R.layout.activity_final_boss_phase3);
         proceed = findViewById(R.id.proceed);
         proceed.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (PlayerInfo.checkItemOne()) {
+                if (PlayerInfo.checkItemThree()) {
                     if (PlayerInfo.movement()) {
                         advanceSuccess();
                     } else {
@@ -38,12 +41,12 @@ public class FinalBossPhase1 extends AppCompatActivity {
     }
 
     public void advanceSuccess() {
-        Intent intent = new Intent(this, FinalBossPhase2.class);
+        Intent intent = new Intent(this, FinalBossPhase4.class);
         startActivity(intent);
     }
 
     public void advanceFail() {
-        Intent intent = new Intent(this, FinalBossFailedPhase1.class);
+        Intent intent = new Intent(this, FinalBossFailedPhase3.class);
         startActivity(intent);
     }
 

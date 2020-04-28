@@ -9,7 +9,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="You went one unit north"
+        android:text="You picked up a shiny gem!"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:id="@+id/textView" />
@@ -18,7 +18,7 @@
         android:id="@+id/proceed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="North two"
+        android:text="Proceed Further into the Cave"
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true" />
 

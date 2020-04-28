@@ -9,7 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".NorthBranch.NorthFour"></activity>
+        <activity android:name=".homePage" />
+        <activity android:name=".SouthBranch.FinalBossFailedPhase4" />
+        <activity android:name=".SouthBranch.FinalBossFailedPhase3" />
+        <activity android:name=".SouthBranch.FinalBossFailedPhase2" />
+        <activity android:name=".SouthBranch.FinalBossFailedPhase1" />
+        <activity android:name=".SouthBranch.FinalBossPhase2" />
+        <activity android:name=".SouthBranch.FinalBossPhase1" />
+        <activity android:name=".SouthBranch.FinalBossPhase3" />
+        <activity android:name=".SouthBranch.FinalBossPhase4" />
+        <activity android:name=".EndGame" />
+        <activity android:name=".NorthBranch.NorthFour" />
         <activity android:name=".NorthBranch.NorthThreeFail" />
         <activity android:name=".NorthBranch.NorthThreeSucceed" />
         <activity android:name=".NorthBranch.NorthTwo" />
@@ -21,7 +31,6 @@
         <activity android:name=".EastBranch.EastOne" />
         <activity android:name=".SouthBranch.SouthOne" />
         <activity android:name=".NorthBranch.NorthOne" />
-        <activity android:name=".homePage" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

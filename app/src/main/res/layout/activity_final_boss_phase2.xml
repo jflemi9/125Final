@@ -15,7 +15,7 @@ tools:context=".MainActivity">
     android:id="@+id/textView" />
 
 <Button
-    android:id="@+id/backHome"
+    android:id="@+id/proceed"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="Flank it!"

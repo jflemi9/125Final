@@ -1,4 +1,4 @@
-package com.example.final125;
+package com.example.final125.SouthBranch;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,14 +7,19 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class FinalBossFailedPhase1 extends AppCompatActivity {
+import com.example.final125.GameOver;
+import com.example.final125.PlayerInfo;
+import com.example.final125.R;
+import com.example.final125.homePage;
+
+public class FinalBossFailedPhase4 extends AppCompatActivity {
 
     private Button home;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_final_boss_failed_phase1);
+        setContentView(R.layout.activity_failed_final_boss_phase4);
         if (!PlayerInfo.badEnd()) {
             gameOver();
         }

@@ -17,7 +17,6 @@
         <activity android:name=".WestOneSucceed" />
         <activity android:name=".GameOver" />
         <activity android:name=".NorthEnd" />
-        <activity android:name=".NorthFour" />
         <activity android:name=".EastOne" />
         <activity android:name=".SouthOne" />
         <activity android:name=".NorthOne" />

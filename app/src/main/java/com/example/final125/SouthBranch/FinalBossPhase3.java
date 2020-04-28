@@ -1,4 +1,4 @@
-package com.example.final125.NorthBranch;
+package com.example.final125.SouthBranch;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,52 +10,46 @@ import android.widget.Button;
 import com.example.final125.GameOver;
 import com.example.final125.PlayerInfo;
 import com.example.final125.R;
-import com.example.final125.homePage;
 
-public class NorthFour extends AppCompatActivity {
+public class FinalBossPhase3 extends AppCompatActivity {
 
-    private Button home;
     private Button proceed;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_north_four);
-
-        PlayerInfo.obtainedItemFour();
-
-        home = findViewById(R.id.backHome);
-        home.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (PlayerInfo.movement()) {
-                    returnHome();
-                } else {
-                    gameOver();
-                }
-            }
-        });
-
+        setContentView(R.layout.activity_final_boss_phase3);
         proceed = findViewById(R.id.proceed);
         proceed.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (PlayerInfo.movement()) {
-                    advanceSuccess();
+                if (PlayerInfo.checkItemThree()) {
+                    if (PlayerInfo.movement()) {
+                        advanceSuccess();
+                    } else {
+                        gameOver();
+                    }
                 } else {
-                    gameOver();
+                    if (PlayerInfo.movement()) {
+                        advanceFail();
+                    } else {
+                        gameOver();
+                    }
                 }
             }
         });
     }
 
     public void advanceSuccess() {
-        Intent intent = new Intent(this, NorthEnd.class);
+        Intent intent = new Intent(this, FinalBossPhase4.class);
         startActivity(intent);
     }
-    public void returnHome() {
-        Intent intent = new Intent(this, homePage.class);
+
+    public void advanceFail() {
+        Intent intent = new Intent(this, FinalBossFailedPhase3.class);
         startActivity(intent);
     }
+
     public void gameOver() {
         Intent intent = new Intent(this, GameOver.class);
         startActivity(intent);

@@ -9,26 +9,17 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="NORTH ONE"
+        android:text="You picked up a shiny gem!"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:id="@+id/textView" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="OBTAINED ITEM 1"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:id="@+id/obtainItem"
-        android:layout_below="@+id/textView"/>
 
     <Button
         android:id="@+id/proceed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="North two"
-        android:layout_below="@+id/obtainItem"
+        android:text="Proceed Further into the Cave"
+        android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true" />
 
     <Button

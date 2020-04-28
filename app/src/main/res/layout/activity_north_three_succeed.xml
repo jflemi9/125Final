@@ -9,7 +9,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="NORTH THREE PASSED >> YOU HAVE ITEM 3"
+        android:text="You shot up the monkeys!"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:id="@+id/textView" />
@@ -18,7 +18,7 @@
         android:id="@+id/proceed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="North four"
+        android:text="Proceed into the deepest part of the cave"
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true" />
 

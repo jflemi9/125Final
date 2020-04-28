@@ -20,6 +20,8 @@ public class NorthEnd extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_north_end);
 
+        PlayerInfo.obtainedPartOne();
+
         home = findViewById(R.id.backHome);
         home.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -1,4 +1,4 @@
-package com.example.final125.NorthBranch;
+package com.example.final125.SouthBranch;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -12,16 +12,17 @@ import com.example.final125.PlayerInfo;
 import com.example.final125.R;
 import com.example.final125.homePage;
 
-public class NorthFour extends AppCompatActivity {
+public class FinalBossFailedPhase2 extends AppCompatActivity {
 
     private Button home;
-    private Button proceed;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_north_four);
-
-        PlayerInfo.obtainedItemFour();
+        setContentView(R.layout.activity_final_boss_failed_phase2);
+        if (!PlayerInfo.badEnd()) {
+            gameOver();
+        }
 
         home = findViewById(R.id.backHome);
         home.setOnClickListener(new View.OnClickListener() {
@@ -34,24 +35,8 @@ public class NorthFour extends AppCompatActivity {
                 }
             }
         });
-
-        proceed = findViewById(R.id.proceed);
-        proceed.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (PlayerInfo.movement()) {
-                    advanceSuccess();
-                } else {
-                    gameOver();
-                }
-            }
-        });
     }
 
-    public void advanceSuccess() {
-        Intent intent = new Intent(this, NorthEnd.class);
-        startActivity(intent);
-    }
     public void returnHome() {
         Intent intent = new Intent(this, homePage.class);
         startActivity(intent);

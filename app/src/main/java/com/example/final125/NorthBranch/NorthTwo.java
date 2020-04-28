@@ -1,4 +1,4 @@
-package com.example.final125;
+package com.example.final125.NorthBranch;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,16 +7,21 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class NorthOne extends AppCompatActivity {
+import com.example.final125.GameOver;
+import com.example.final125.NorthBranch.NorthThreeFail;
+import com.example.final125.NorthBranch.NorthThreeSucceed;
+import com.example.final125.PlayerInfo;
+import com.example.final125.R;
+import com.example.final125.homePage;
+
+public class NorthTwo extends AppCompatActivity {
     private Button home;
     private Button proceed;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_north_one);
-
-        PlayerInfo.obtainedItemOne();
+        setContentView(R.layout.activity_north_two);
 
         home = findViewById(R.id.backHome);
         home.setOnClickListener(new View.OnClickListener() {
@@ -52,11 +57,11 @@ public class NorthOne extends AppCompatActivity {
     }
 
     public void advanceSuccess() {
-        Intent intent = new Intent(this, NorthTwoSucceed.class);
+        Intent intent = new Intent(this, NorthThreeSucceed.class);
         startActivity(intent);
     }
     public void advanceFail() {
-        Intent intent = new Intent(this, NorthTwoFail.class);
+        Intent intent = new Intent(this, NorthThreeFail.class);
         startActivity(intent);
     }
     public void returnHome() {

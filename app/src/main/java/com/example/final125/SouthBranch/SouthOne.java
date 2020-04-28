@@ -1,4 +1,4 @@
-package com.example.final125;
+package com.example.final125.SouthBranch;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,17 +7,16 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class WestOneFail extends AppCompatActivity {
+import com.example.final125.R;
+import com.example.final125.homePage;
+
+public class SouthOne extends AppCompatActivity {
     private Button home;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_west_one_fail);
-
-        if (!PlayerInfo.badEnd()) {
-            gameOver();
-        }
+        setContentView(R.layout.activity_south_one);
 
         home = findViewById(R.id.backHome);
         home.setOnClickListener(new View.OnClickListener() {
@@ -29,10 +28,6 @@ public class WestOneFail extends AppCompatActivity {
     }
     public void returnHome() {
         Intent intent = new Intent(this, homePage.class);
-        startActivity(intent);
-    }
-    public void gameOver() {
-        Intent intent = new Intent(this, GameOver.class);
         startActivity(intent);
     }
 }

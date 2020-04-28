@@ -1,4 +1,4 @@
-package com.example.final125;
+package com.example.final125.EastBranch;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,13 +7,16 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class SouthOne extends AppCompatActivity {
+import com.example.final125.R;
+import com.example.final125.homePage;
+
+public class EastOne extends AppCompatActivity {
     private Button home;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_south_one);
+        setContentView(R.layout.activity_east_one);
 
         home = findViewById(R.id.backHome);
         home.setOnClickListener(new View.OnClickListener() {

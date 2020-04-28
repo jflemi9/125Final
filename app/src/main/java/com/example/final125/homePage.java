@@ -12,8 +12,7 @@ import android.widget.TextView;
 import com.example.final125.EastBranch.EastOne;
 import com.example.final125.NorthBranch.NorthOne;
 import com.example.final125.SouthBranch.SouthOne;
-import com.example.final125.WestBranch.WestOneFail;
-import com.example.final125.WestBranch.WestOneSucceed;
+import com.example.final125.WestBranch.WestOne;
 
 public class homePage extends AppCompatActivity {
     private Button north;
@@ -77,11 +76,7 @@ public class homePage extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (PlayerInfo.movement()) {
-                    if (PlayerInfo.checkItemOne()) {
-                        westAdvanceSuccess();
-                    } else {
-                        westAdvanceFail();
-                    }
+                    advanceWest();
                 } else {
                     gameOver();
                 }
@@ -100,12 +95,8 @@ public class homePage extends AppCompatActivity {
         Intent intent = new Intent(this, EastOne.class);
         startActivity(intent);
     }
-    public void westAdvanceSuccess() {
-        Intent intent = new Intent(this, WestOneSucceed.class);
-        startActivity(intent);
-    }
-    public void westAdvanceFail() {
-        Intent intent = new Intent(this, WestOneFail.class);
+    public void advanceWest() {
+        Intent intent = new Intent(this, WestOne.class);
         startActivity(intent);
     }
     public void gameOver() {

@@ -9,17 +9,25 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="You dont have the item to enter here"
+        android:text="WEST TWO PASSED >> YOU HAVE ITEM 1"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:id="@+id/textView" />
+
+    <Button
+        android:id="@+id/proceed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="West Three"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:id="@+id/backHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Back to home"
-        android:layout_below="@+id/textView"
+        android:layout_below="@+id/proceed"
         android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

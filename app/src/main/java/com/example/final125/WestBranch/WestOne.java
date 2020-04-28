@@ -12,14 +12,14 @@ import com.example.final125.PlayerInfo;
 import com.example.final125.R;
 import com.example.final125.homePage;
 
-public class WestOneSucceed extends AppCompatActivity {
+public class WestOne extends AppCompatActivity {
     private Button home;
     private Button proceed;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_west_one_succeed);
+        setContentView(R.layout.activity_west_one);
 
         home = findViewById(R.id.backHome);
         home.setOnClickListener(new View.OnClickListener() {
@@ -37,20 +37,33 @@ public class WestOneSucceed extends AppCompatActivity {
         proceed.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (PlayerInfo.movement()) {
-                    advanceSucceed();
+                if (PlayerInfo.checkItemOne()) {
+                    if (PlayerInfo.movement()) {
+                        advanceSuccess();
+                    } else {
+                        gameOver();
+                    }
                 } else {
-                    gameOver();
+                    if (PlayerInfo.movement()) {
+                        advanceFail();
+                    } else {
+                        gameOver();
+                    }
                 }
             }
         });
     }
-    public void returnHome() {
-        Intent intent = new Intent(this, homePage.class);
+
+    public void advanceSuccess() {
+        Intent intent = new Intent(this, WestTwoSucceed.class);
         startActivity(intent);
     }
-    public void advanceSucceed() {
-        Intent intent = new Intent(this, WestTwo.class);
+    public void advanceFail() {
+        Intent intent = new Intent(this, WestTwoFail.class);
+        startActivity(intent);
+    }
+    public void returnHome() {
+        Intent intent = new Intent(this, homePage.class);
         startActivity(intent);
     }
     public void gameOver() {

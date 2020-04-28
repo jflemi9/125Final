@@ -6,11 +6,11 @@ import android.os.Bundle;
 
 import com.example.final125.R;
 
-public class WestTwo extends AppCompatActivity {
+public class WestThree extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_west_two);
+        setContentView(R.layout.activity_west_three);
     }
 }

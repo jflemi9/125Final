@@ -9,7 +9,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="West Three (Obtained item 2)"
+        android:text="EAST TWO PASSED >> YOU HAVE ITEM 2"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:id="@+id/textView" />
@@ -18,7 +18,7 @@
         android:id="@+id/proceed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="West four"
+        android:text="East Three"
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true" />
 

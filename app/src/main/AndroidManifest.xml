@@ -9,6 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".EastBranch.EastEnd"></activity>
+        <activity android:name=".EastBranch.EastFiveSucceed" />
+        <activity android:name=".EastBranch.EastFiveFail" />
+        <activity android:name=".EastBranch.EastFour" />
+        <activity android:name=".EastBranch.EastThree" />
+        <activity android:name=".EastBranch.EastTwoSucceed" />
+        <activity android:name=".EastBranch.EastTwoFail" />
+        <activity android:name=".WestBranch.WestEnd" />
+        <activity android:name=".WestBranch.WestFiveSucceed" />
+        <activity android:name=".WestBranch.WestFiveFail" />
+        <activity android:name=".WestBranch.WestFour" />
         <activity android:name=".homePage" />
         <activity android:name=".SouthBranch.FinalBossFailedPhase4" />
         <activity android:name=".SouthBranch.FinalBossFailedPhase3" />

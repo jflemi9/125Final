@@ -1,8 +1,10 @@
-package com.example.final125;
+package com.example.final125.WestBranch;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.final125.R;
 
 public class WestTwo extends AppCompatActivity {
 

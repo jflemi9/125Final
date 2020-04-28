@@ -9,7 +9,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
+import com.example.final125.EastBranch.EastOne;
+import com.example.final125.NorthBranch.NorthOne;
+import com.example.final125.SouthBranch.SouthOne;
+import com.example.final125.WestBranch.WestOneFail;
+import com.example.final125.WestBranch.WestOneSucceed;
 
 public class homePage extends AppCompatActivity {
     private Button north;

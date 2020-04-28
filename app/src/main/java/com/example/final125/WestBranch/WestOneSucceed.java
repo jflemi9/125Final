@@ -1,4 +1,4 @@
-package com.example.final125;
+package com.example.final125.WestBranch;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import com.example.final125.GameOver;
+import com.example.final125.PlayerInfo;
+import com.example.final125.R;
+import com.example.final125.homePage;
 
 public class WestOneSucceed extends AppCompatActivity {
     private Button home;

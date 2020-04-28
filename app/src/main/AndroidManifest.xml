@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".NorthThree"></activity>
+        <activity android:name=".EndGame"></activity>
+        <activity android:name=".FinalBossPhase4" />
+        <activity android:name=".FinalBossPhase3" />
+        <activity android:name=".FinalBossPhase2" />
+        <activity android:name=".FinalBossFailedPhase1" />
+        <activity android:name=".FinalBossPhase1" />
+        <activity android:name=".NorthThree" />
         <activity android:name=".NorthTwoSucceed" />
         <activity android:name=".NorthTwoFail" />
         <activity android:name=".WestTwo" />

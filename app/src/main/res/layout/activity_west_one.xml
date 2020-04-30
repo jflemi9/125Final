@@ -8,7 +8,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="WEST ONE"
+        android:text="A menacing village guard stands in front of the gate "
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:id="@+id/textView" />
@@ -17,7 +17,7 @@
         android:id="@+id/proceed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="West Two (need item 1)"
+        android:text="Attempt to wak past him"
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true" />
 
@@ -25,7 +25,7 @@
         android:id="@+id/backHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Back to home"
+        android:text="Return home"
         android:layout_below="@+id/proceed"
         android:layout_centerHorizontal="true" />
 

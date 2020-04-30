@@ -9,7 +9,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="You have reached east end (obtained part 1)"
+        android:text="You Successfully Printed -INSERT SHIP PART-"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:id="@+id/textView" />
@@ -18,17 +18,18 @@
         android:id="@+id/backHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Back to home"
-        android:layout_below="@+id/textView"
+        android:text="Back to Launch Site"
+        android:layout_below="@+id/complete"
         android:layout_centerHorizontal="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="SPACESHIP COMPLETE"
+        android:text="Unfortunately the 3D printer was damaged due to a power overload,
+        you'll have to search for the last ship part!"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:id="@+id/complete"
-        android:layout_below="@+id/backHome"/>
+        android:layout_below="@+id/textView"/>
 
 </RelativeLayout>

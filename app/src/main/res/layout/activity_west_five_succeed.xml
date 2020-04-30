@@ -9,7 +9,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="WEST FIVE PASSED >> YOU HAVE ITEM 4"
+        android:text="You helped power the village! The village elder is pleased!"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:id="@+id/textView" />
@@ -18,7 +18,7 @@
         android:id="@+id/proceed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="West end"
+        android:text="Accept his token of thanks!"
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true" />
 
@@ -26,7 +26,7 @@
         android:id="@+id/backHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Back to home"
+        android:text="Return to Launch Site"
         android:layout_below="@+id/proceed"
         android:layout_centerHorizontal="true" />
 

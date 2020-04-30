@@ -23,9 +23,10 @@
         <activity android:name=".NorthBranch.NorthThreeFail" />
         <activity android:name=".NorthBranch.NorthThreeSucceed" />
         <activity android:name=".NorthBranch.NorthTwo" />
-        <activity android:name=".WestBranch.WestTwo" />
-        <activity android:name=".WestBranch.WestOneFail" />
-        <activity android:name=".WestBranch.WestOneSucceed" />
+        <activity android:name=".WestBranch.WestOne" />
+        <activity android:name=".WestBranch.WestTwoFail" />
+        <activity android:name=".WestBranch.WestTwoSucceed" />
+        <activity android:name=".WestBranch.WestThree" />
         <activity android:name=".GameOver" />
         <activity android:name=".NorthBranch.NorthEnd" />
         <activity android:name=".EastBranch.EastOne" />

@@ -12,14 +12,14 @@ import com.example.final125.PlayerInfo;
 import com.example.final125.R;
 import com.example.final125.homePage;
 
-public class EastOne extends AppCompatActivity {
+public class EastFour extends AppCompatActivity {
     private Button home;
     private Button proceed;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_east_one);
+        setContentView(R.layout.activity_east_four);
 
         home = findViewById(R.id.backHome);
         home.setOnClickListener(new View.OnClickListener() {
@@ -32,12 +32,11 @@ public class EastOne extends AppCompatActivity {
                 }
             }
         });
-
         proceed = findViewById(R.id.proceed);
         proceed.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (PlayerInfo.checkItemTwo()) {
+                if (PlayerInfo.checkItemFour()) {
                     if (PlayerInfo.movement()) {
                         advanceSuccess();
                     } else {
@@ -50,16 +49,17 @@ public class EastOne extends AppCompatActivity {
                         gameOver();
                     }
                 }
+
             }
         });
     }
 
     public void advanceSuccess() {
-        Intent intent = new Intent(this, EastTwoSucceed.class);
+        Intent intent = new Intent(this, EastFiveSucceed.class);
         startActivity(intent);
     }
     public void advanceFail() {
-        Intent intent = new Intent(this, EastTwoFail.class);
+        Intent intent = new Intent(this, EastFiveFail.class);
         startActivity(intent);
     }
     public void returnHome() {
@@ -71,3 +71,4 @@ public class EastOne extends AppCompatActivity {
         startActivity(intent);
     }
 }
+

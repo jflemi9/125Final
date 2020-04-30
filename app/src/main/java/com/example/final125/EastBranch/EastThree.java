@@ -12,14 +12,16 @@ import com.example.final125.PlayerInfo;
 import com.example.final125.R;
 import com.example.final125.homePage;
 
-public class EastOne extends AppCompatActivity {
+public class EastThree extends AppCompatActivity {
     private Button home;
     private Button proceed;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_east_one);
+        setContentView(R.layout.activity_east_three);
+
+        PlayerInfo.obtainedItemThree();
 
         home = findViewById(R.id.backHome);
         home.setOnClickListener(new View.OnClickListener() {
@@ -37,33 +39,20 @@ public class EastOne extends AppCompatActivity {
         proceed.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (PlayerInfo.checkItemTwo()) {
-                    if (PlayerInfo.movement()) {
-                        advanceSuccess();
-                    } else {
-                        gameOver();
-                    }
+                if (PlayerInfo.movement()) {
+                    advanceSuccess();
                 } else {
-                    if (PlayerInfo.movement()) {
-                        advanceFail();
-                    } else {
-                        gameOver();
-                    }
+                    gameOver();
                 }
             }
         });
     }
-
-    public void advanceSuccess() {
-        Intent intent = new Intent(this, EastTwoSucceed.class);
-        startActivity(intent);
-    }
-    public void advanceFail() {
-        Intent intent = new Intent(this, EastTwoFail.class);
-        startActivity(intent);
-    }
     public void returnHome() {
         Intent intent = new Intent(this, homePage.class);
+        startActivity(intent);
+    }
+    public void advanceSuccess() {
+        Intent intent = new Intent(this, EastFour.class);
         startActivity(intent);
     }
     public void gameOver() {

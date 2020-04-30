@@ -9,7 +9,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="EAST FIVE PASSED >> YOU HAVE ITEM 4"
+        android:text="The 3D Printer Hums to life! You did it! You can Print Ship Parts!"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:id="@+id/textView" />
@@ -18,7 +18,7 @@
         android:id="@+id/proceed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="East end"
+        android:text="Enter Specifications for -INSERT SPACE PART-"
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true" />
 
@@ -26,7 +26,7 @@
         android:id="@+id/backHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Back to home"
+        android:text="Return to Launch Site"
         android:layout_below="@+id/proceed"
         android:layout_centerHorizontal="true" />
 

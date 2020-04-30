@@ -1,4 +1,4 @@
-package com.example.final125;
+package com.example.final125.WestBranch_VillageExplore;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,23 +7,26 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
-    private Button startButton;
+import com.example.final125.R;
+import com.example.final125.HomePage;
+
+public class WestTwoFail extends AppCompatActivity {
+    private Button home;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_west_two_fail);
 
-        startButton = findViewById(R.id.startGame);
-        startButton.setOnClickListener(new View.OnClickListener() {
+        home = findViewById(R.id.backHome);
+        home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startGame();
+                returnHome();
             }
         });
     }
-    public void startGame() {
+    public void returnHome() {
         Intent intent = new Intent(this, HomePage.class);
         startActivity(intent);
     }

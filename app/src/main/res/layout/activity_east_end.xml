@@ -25,8 +25,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Unfortunately the 3D printer was damaged due to a power overload,
-        you'll have to search for the last ship part!"
+        android:text="Unfortunately the 3D printer was damaged due to a power overload, you'll have to search for the last ship part!"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:id="@+id/complete"

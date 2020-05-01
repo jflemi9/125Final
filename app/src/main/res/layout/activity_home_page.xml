@@ -50,5 +50,14 @@
         android:text="West"
         android:layout_below="@+id/goEast"
         android:layout_centerHorizontal="true" />
-    
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="728dp"
+        android:layout_below="@+id/goWest"
+        android:layout_marginTop="-410dp"
+        app:srcCompat="@drawable/download" />
+
+
 </RelativeLayout>

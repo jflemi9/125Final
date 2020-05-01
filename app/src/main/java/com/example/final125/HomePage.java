@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.final125.EastBranch_BaseExplore.EastOne;
@@ -20,12 +21,16 @@ public class HomePage extends AppCompatActivity {
     private Button east;
     private Button west;
     private TextView oxygenPercentage;
+    private ImageView jamesCharles;
 
     @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
+
+        jamesCharles = findViewById(R.id.imageView);
+        jamesCharles.setImageResource(R.drawable.download);
 
         if (PlayerInfo.checkOxygenPercentage() == -1000) {
             final PlayerInfo player = new PlayerInfo();

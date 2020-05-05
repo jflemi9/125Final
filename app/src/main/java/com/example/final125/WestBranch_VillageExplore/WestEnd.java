@@ -41,6 +41,7 @@ public class WestEnd extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_west_end);
         hideSystemUI();
+        PlayerInfo.obtainedPartThree();
         home = findViewById(R.id.backHome);
         home.setOnClickListener(new View.OnClickListener() {
             @Override

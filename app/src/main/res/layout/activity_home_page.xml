@@ -51,4 +51,34 @@
         android:layout_below="@+id/goEast"
         android:layout_centerHorizontal="true" />
 
+    <ImageView
+        android:id="@+id/launchOne"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/launchzone1" />
+
+    <ImageView
+        android:id="@+id/launchTwo"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/launchzone2" />
+
+    <ImageView
+        android:id="@+id/launchThree"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/launchzone3" />
+
+    <ImageView
+        android:id="@+id/launchFour"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/launchzone4" />
+
+    <ImageView
+        android:id="@+id/launchEnd"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/launchzone_endgame" />
+
 </RelativeLayout>

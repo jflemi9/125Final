@@ -21,7 +21,11 @@ public class HomePage extends AppCompatActivity {
     private Button east;
     private Button west;
     private TextView oxygenPercentage;
-    private ImageView jamesCharles;
+    private ImageView launch1;
+    private ImageView launch2;
+    private ImageView launch3;
+    private ImageView launch4;
+    private ImageView launchEnd;
 
     private void hideSystemUI() {
         // Enables regular immersive mode.
@@ -40,33 +44,50 @@ public class HomePage extends AppCompatActivity {
                         | View.SYSTEM_UI_FLAG_FULLSCREEN);
     }
 
-
-
-    /*
-    LOGIC FOR HOMEPAGE:
-
-    if (Player.checkPartOne()) {
-        use LAUNCHZONE_2.png
-    } else if (Player.checkPartTwo() && Player.checkPartThree()) {
-        use LAUNCHZONE_4.png
-    } else if (Player.checkPartTwo() || Player.checkPartThree()) {
-        use LAUNCHZONE_3.png
-    } else {
-        use LUANCHZONE_1.png
-    }
-
-    Maybe create 4 different xmls and setContentView(R.layout.(SPECIFIED LAUNCHZONE IMAGE) depending on the if statements?
-
-     */
-
-
     @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
-
         hideSystemUI();
+
+        launch1 = findViewById(R.id.launchOne);
+        launch2 = findViewById(R.id.launchTwo);
+        launch3 = findViewById(R.id.launchThree);
+        launch4 = findViewById(R.id.launchFour);
+        launchEnd = findViewById(R.id.launchEnd);
+
+        launch1.setVisibility(View.INVISIBLE);
+        launch2.setVisibility(View.INVISIBLE);
+        launch3.setVisibility(View.INVISIBLE);
+        launch4.setVisibility(View.INVISIBLE);
+        launchEnd.setVisibility(View.INVISIBLE);
+
+        if (PlayerInfo.checkPartOne() && !PlayerInfo.checkPartTwo()) {
+            launch1.setVisibility(View.VISIBLE);
+            launch2.setVisibility(View.INVISIBLE);
+            launch3.setVisibility(View.INVISIBLE);
+            launch4.setVisibility(View.INVISIBLE);
+            launchEnd.setVisibility(View.INVISIBLE);
+        } else if (PlayerInfo.checkPartTwo() && PlayerInfo.checkPartOne() && !PlayerInfo.checkPartThree()) {
+            launch1.setVisibility(View.INVISIBLE);
+            launch2.setVisibility(View.VISIBLE);
+            launch3.setVisibility(View.INVISIBLE);
+            launch4.setVisibility(View.INVISIBLE);
+            launchEnd.setVisibility(View.INVISIBLE);
+        } else if (PlayerInfo.checkPartThree() && !PlayerInfo.checkPartFour()) {
+            launch1.setVisibility(View.INVISIBLE);
+            launch2.setVisibility(View.INVISIBLE);
+            launch3.setVisibility(View.VISIBLE);
+            launch4.setVisibility(View.INVISIBLE);
+            launchEnd.setVisibility(View.INVISIBLE);
+        } else if (PlayerInfo.checkPartFour()) {
+            launch1.setVisibility(View.INVISIBLE);
+            launch2.setVisibility(View.INVISIBLE);
+            launch3.setVisibility(View.INVISIBLE);
+            launch4.setVisibility(View.VISIBLE);
+            launchEnd.setVisibility(View.INVISIBLE);
+        }
 
         if (PlayerInfo.checkOxygenPercentage() == -1000) {
             final PlayerInfo player = new PlayerInfo();

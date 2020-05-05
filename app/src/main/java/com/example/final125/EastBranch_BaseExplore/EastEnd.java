@@ -42,7 +42,7 @@ public class EastEnd extends AppCompatActivity {
         setContentView(R.layout.activity_east_end);
         hideSystemUI();
 
-        PlayerInfo.obtainedPartThree();
+        PlayerInfo.obtainedPartTwo();
 
 
         home = findViewById(R.id.backHome);

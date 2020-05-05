@@ -54,58 +54,33 @@ public class PlayerInfo {
     }
 
     public static boolean checkItemOne() {
-        if (itemOne == true) {
-            return true;
-        } else {
-            return false;
-        }
+        return itemOne;
     }
 
     public static boolean checkItemTwo() {
-        if (itemTwo == true) {
-            return true;
-        } else {
-            return false;
-        }
+        return itemTwo;
     }
 
     public static boolean checkItemThree() {
-        if (itemThree == true) {
-            return true;
-        } else {
-            return false;
-        }
+        return itemThree;
     }
 
     public static boolean checkItemFour() {
-        if (itemFour == true) {
-            return true;
-        } else {
-            return false;
-        }
+        return itemFour;
     }
 
     public static boolean checkPartOne() {
-        if (partOne == true) {
-            return true;
-        } else {
-            return false;
-        }
+        return partOne;
     }
 
     public static boolean checkPartTwo() {
-        if (partTwo == true) {
-            return true;
-        } else {
-            return false;
-        }
+        return partTwo;
     }
     public static boolean checkPartThree() {
-        if (partThree == true) {
-            return true;
-        } else {
-            return false;
-        }
+        return partThree;
+    }
+    public static boolean checkPartFour() {
+        return partFour;
     }
 
 

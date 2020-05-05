@@ -10,8 +10,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="You know the heat-resistant nose of your space craft is ahead, but so is the space-arachnid that destroyed your base and killed your teammates. It is incredibly dangerous to proceed."
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
+        android:elevation="@android:dimen/app_icon_size"
+        android:textColor="#FFFFFF"
+        android:textSize="19dp"
         android:id="@+id/textView" />
 
     <Button
@@ -19,19 +20,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Back to home"
-        android:layout_below="@+id/proceed"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
 
     <Button
         android:id="@+id/proceed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Proceed"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" />
 
     <ImageView
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent" />
+        android:layout_height="fill_parent"
+        android:src="@drawable/south_one"/>
 
 </RelativeLayout>

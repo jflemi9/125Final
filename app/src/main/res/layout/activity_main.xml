@@ -10,9 +10,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Welcome to the EscapeFromMars!"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:id="@+id/textView" />
+        android:elevation="@android:dimen/app_icon_size"
+        android:textColor="#000000"
+        android:textSize="19dp"
+        android:id="@+id/textView"
+        android:layout_centerHorizontal="true"/>
     <Button
         android:id="@+id/startGame"
         android:layout_width="wrap_content"
@@ -21,4 +23,8 @@
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true" />
 
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/start1_start" />
 </RelativeLayout>

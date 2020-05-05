@@ -10,8 +10,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="You were overwhelmed! You barely got away with your life."
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
+        android:elevation="@android:dimen/app_icon_size"
+        android:textColor="#FFFFFF"
+        android:textSize="19dp"
         android:id="@+id/textView" />
 
     <Button
@@ -19,11 +20,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Return to Launch-zone!"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentBottom="true" />
 
     <ImageView
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent" />
+        android:layout_height="fill_parent"
+        android:src="@drawable/final_boss_phase3_fail"/>
 
 </RelativeLayout>

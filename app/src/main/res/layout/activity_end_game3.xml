@@ -9,8 +9,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="You exit the atmosphere! You have Escaped from Mars! YOU WIN!"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
+        android:elevation="@android:dimen/app_icon_size"
+        android:textColor="#FFFFFF"
+        android:textSize="19dp"
+        android:layout_marginTop="650dp"
         android:id="@+id/textView" />
 
     <Button
@@ -18,7 +20,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Start A New Game?"
-        android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true" />
 
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/end_game3" />
 </RelativeLayout>

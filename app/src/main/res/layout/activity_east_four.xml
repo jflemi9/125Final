@@ -30,4 +30,10 @@
         android:layout_below="@+id/proceed"
         android:layout_centerHorizontal="true" />
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/eastcheck2_intro" />
+
 </RelativeLayout>

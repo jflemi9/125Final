@@ -8,7 +8,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="You got trapped by the webs and could't escape!"
+        android:text="You hardly take 20 steps when you suddenly feel immobilized. The arachnids invisible webs slowly materialize. You fell for the arachnids trap. You begin to panic."
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:id="@+id/textView" />

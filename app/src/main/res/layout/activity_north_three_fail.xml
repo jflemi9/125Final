@@ -10,7 +10,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="You got fucked up by them monkeys D:"
+        android:text="You were overwhelmed by the monkeys! You never stood a chance without a weapon."
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:id="@+id/textView" />
@@ -19,7 +19,7 @@
         android:id="@+id/backHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Scurry back home"
+        android:text="Scurry back to Launch-Zone"
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true" />
 

@@ -9,7 +9,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="A menacing village guard stands in front of the gate "
+        android:text="A large alien village lies ahead. You are unsure about their level of technology and they seem hostile to strangers but you are desperate. A menacing village guard stands in front of the gate."
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:id="@+id/textView" />
@@ -26,7 +26,7 @@
         android:id="@+id/backHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Return home"
+        android:text="Return to Launch-zone"
         android:layout_below="@+id/proceed"
         android:layout_centerHorizontal="true" />
 

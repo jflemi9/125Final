@@ -9,7 +9,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="The Village Guard is pleased with his gift"
+        android:text="Hoping you can appease them with gifts, you fish into your pocket and bring out the shiny gem you found at the mouth of the cave. The guard's face instantly lights up! They greedily grab the gem before letting you pass."
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:id="@+id/textView" />
@@ -26,7 +26,7 @@
         android:id="@+id/backHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Return to Launch Site"
+        android:text="Return to Launch-zone"
         android:layout_below="@+id/proceed"
         android:layout_centerHorizontal="true" />
 

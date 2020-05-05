@@ -17,7 +17,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="The game has been started"
+        android:text="This is your launch-zone. Attempt to explore the region to build your ship and escape this hostile planet. You're running short of time!"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/oxygenLevel"/>
 

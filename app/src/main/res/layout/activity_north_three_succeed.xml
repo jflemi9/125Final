@@ -9,7 +9,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="You shot up the monkeys!"
+        android:text="You defeated the monkeys! They scurry back to their nests, on the ceiling of the cavern."
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:id="@+id/textView" />
@@ -18,7 +18,7 @@
         android:id="@+id/proceed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Proceed into the deepest part of the cave"
+        android:text="Proceed into the deepest part of the cave?"
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true" />
 
@@ -26,7 +26,7 @@
         android:id="@+id/backHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Back to home"
+        android:text="Back to Launch-Zone"
         android:layout_below="@+id/proceed"
         android:layout_centerHorizontal="true" />
 

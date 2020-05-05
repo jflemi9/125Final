@@ -9,7 +9,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="You found a Spare Laser Cutter from a Construction Site"
+        android:text="You found a Spare Laser Cutter from a construction site in the village. It looks different from the ones you're used to but it seems to work the same way. Not bad! You notice an older respected alien sitting near a strange machine and looking glum."
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:id="@+id/textView" />
@@ -26,7 +26,7 @@
         android:id="@+id/backHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Back to Launch Site"
+        android:text="Back to Launch-zone"
         android:layout_below="@+id/proceed"
         android:layout_centerHorizontal="true" />
 

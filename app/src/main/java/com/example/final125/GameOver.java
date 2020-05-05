@@ -9,6 +9,8 @@ import android.widget.Button;
 
 public class GameOver extends AppCompatActivity {
 
+    // GAME_over.png
+
     private Button startPage;
 
     @Override

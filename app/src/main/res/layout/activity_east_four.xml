@@ -9,7 +9,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Attempt to Power up your 3D Printer"
+        android:text="The 3D printer seems slightly damaged. The solar battery powering it seem to be leaking as well."
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:id="@+id/textView" />
@@ -18,7 +18,7 @@
         android:id="@+id/proceed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Attempt to try and Power up the Base"
+        android:text="Attempt to try and Power up the 3D printer?"
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true" />
 
@@ -26,7 +26,7 @@
         android:id="@+id/backHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Back to Launch Site"
+        android:text="Back to Launch-zone"
         android:layout_below="@+id/proceed"
         android:layout_centerHorizontal="true" />
 

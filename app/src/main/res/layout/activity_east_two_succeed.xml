@@ -9,7 +9,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="You cut your way in using your new Laser Cutters!"
+        android:text="You cut your way in using your new Laser Cutters! Your footsteps echo through the now ghostly halls. You long for the days when they were filled with cheer."
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:id="@+id/textView" />
@@ -26,7 +26,7 @@
         android:id="@+id/backHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Return to Launch Site"
+        android:text="Return to Launch-zone"
         android:layout_below="@+id/proceed"
         android:layout_centerHorizontal="true" />
 

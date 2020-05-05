@@ -9,7 +9,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="The Emergency Defense System is Triggered and Zaps you!"
+        android:text="The Emergency System is Triggered initiates defensive fire! You sprint away before diving into a ditch with bullets whizzing above you. These cannons may be a slight nuisance to space arachnids but they could seriously harm you."
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:id="@+id/textView" />
@@ -18,7 +18,7 @@
         android:id="@+id/backHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Crawl back to Launch Site"
+        android:text="Crawl back to Launch-zone"
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true" />
 

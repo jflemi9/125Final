@@ -9,7 +9,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="You can see evil space monkeys ahead"
+        android:text="You can see evil space monkeys ahead, screaming through the stalagmites."
         android:elevation="@android:dimen/app_icon_size"
         android:textColor="#FFFFFF"
         android:textSize="19dp"
@@ -28,7 +28,7 @@
         android:id="@+id/backHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Back to home"
+        android:text="Back to Launch-zone"
         android:layout_alignParentRight="true"
         android:layout_marginTop="680dp"/>
 

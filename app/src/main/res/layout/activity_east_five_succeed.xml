@@ -9,7 +9,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="The 3D Printer Hums to life! You did it! You can Print Ship Parts!"
+        android:text="The 3D Printer Hums to life! The nuclear powered battery is a perfect substitute! Perhaps you can print space-wings now?"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:id="@+id/textView" />
@@ -18,7 +18,7 @@
         android:id="@+id/proceed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Enter Specifications for -INSERT SPACE PART-"
+        android:text="Enter Specifications for a space-wing."
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true" />
 
@@ -26,7 +26,7 @@
         android:id="@+id/backHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Return to Launch Site"
+        android:text="Return to Launch-zone"
         android:layout_below="@+id/proceed"
         android:layout_centerHorizontal="true" />
 

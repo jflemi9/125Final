@@ -8,7 +8,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="A terrific explosion"
+        android:text="With nervous fingers you quickly press the button activating the nuclear warhead that comes hurtling from the launch-zone. You had been planning this ever since you saw the plutonium in the cave. Revenge for your friends. The explosion that follows nearly knocks you out. You collect yourself and watch the mushroom cloud beginning to form"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:id="@+id/textView" />
@@ -17,7 +17,7 @@
         android:id="@+id/nextPage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Collect heat resistant nose and head back?"
+        android:text="Collect heat resistant nose and head back to launch-zone"
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true" />
 

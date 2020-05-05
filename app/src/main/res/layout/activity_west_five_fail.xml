@@ -9,7 +9,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="The Experiment Went Wrong! Not Enough Power!"
+        android:text="There is not nearly enough power to allow for stable power distribution. The experiment goes horribly wrong! You are zapped by the machine. Thank goodness it isn't at full power."
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:id="@+id/textView" />
@@ -18,7 +18,7 @@
         android:id="@+id/backHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Collect your belongings and head back "
+        android:text="Collect your belongings and head back to Launch-zone "
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true" />
 

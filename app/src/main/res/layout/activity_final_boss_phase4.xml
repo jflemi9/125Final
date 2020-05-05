@@ -9,7 +9,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="The Arachnid is injured and angry"
+        android:text="Your ray gun sizzles hot as you empty cartridge after cartridge into the arachnid. The arachnid roars in pain. You seem to be doing damage but not nearly enough. It begins to rapidly close in on you."
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:id="@+id/textView" />
@@ -18,7 +18,7 @@
         android:id="@+id/proceed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Its all or Nothing!"
+        android:text="Its all or nothing!"
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true" />
 

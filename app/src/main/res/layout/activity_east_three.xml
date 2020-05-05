@@ -9,7 +9,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="You picked up your trusted Ray Gun!"
+        android:text="You picked up your trusted Ray Gun! As you walk through the living quarters you suddenly remember the large 3D printer in the laboratory. Perhaps it could be useful?"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:id="@+id/textView" />
@@ -18,7 +18,7 @@
         android:id="@+id/proceed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Access 3D printer to make Your -INSERT SHIP PART-"
+        android:text="Access 3D printer to make heat resistance space-wings?-"
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true" />
 
@@ -26,7 +26,7 @@
         android:id="@+id/backHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Back to Launch Site"
+        android:text="Back to Launch-zone"
         android:layout_below="@+id/proceed"
         android:layout_centerHorizontal="true" />
 

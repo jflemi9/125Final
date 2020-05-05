@@ -9,7 +9,7 @@ tools:context=".MainActivity">
 <TextView
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="The Arachnid is distracted by the guard you helped!"
+    android:text="All of a sudden you hear a cry! A guard who you gifted the pretty gem to has arrived to give you backup. You snap out of your daze and are forced into action."
     android:layout_centerHorizontal="true"
     android:layout_centerVertical="true"
     android:id="@+id/textView" />
@@ -18,7 +18,7 @@ tools:context=".MainActivity">
     android:id="@+id/proceed"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="Flank it!"
+    android:text="Attempt to flank the spider!"
     android:layout_below="@+id/textView"
     android:layout_centerHorizontal="true" />
 

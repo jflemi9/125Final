@@ -8,7 +8,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="You've completed the ship!"
+        android:text="You've completed the ship! You collect your belongings and quickly check your oxygen supply. You have less than a few minutes of oxygen left!"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:id="@+id/textView" />

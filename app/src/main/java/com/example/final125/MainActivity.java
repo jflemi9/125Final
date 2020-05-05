@@ -10,6 +10,8 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
     private Button startButton;
 
+    // THIS CORRESPONDS TO start1_start.png
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
     public void startGame() {
-        Intent intent = new Intent(this, HomePage.class);
+        Intent intent = new Intent(this, ChooseDifficulty.class);
         startActivity(intent);
     }
 }

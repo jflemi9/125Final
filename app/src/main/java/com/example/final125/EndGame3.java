@@ -7,27 +7,28 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class EndGame extends AppCompatActivity {
+public class EndGame3 extends AppCompatActivity {
 
-    // THIS CORRESPONDS TO final_boss_win(ENDGAME1).png
+    // THIS CORRESPONDS TO END_GAME3.png
 
     private Button nextPage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_end_game);
+        setContentView(R.layout.activity_end_game3);
         nextPage = findViewById(R.id.nextPage);
         nextPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                toEndGame2();
+                PlayerInfo.resetOxygenPercentage();
+                toStart();
             }
         });
     }
 
-    public void toEndGame2() {
-        Intent intent = new Intent(this, EndGame2.class);
+    public void toStart() {
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
 }

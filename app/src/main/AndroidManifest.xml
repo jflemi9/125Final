@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".EastBranch_BaseExplore.EastEnd"></activity>
+        <activity android:name=".EndGame3"></activity>
+        <activity android:name=".EndGame2" />
+        <activity android:name=".ChooseDifficulty" />
+        <activity android:name=".EastBranch_BaseExplore.EastEnd" />
         <activity android:name=".EastBranch_BaseExplore.EastFiveSucceed" />
         <activity android:name=".EastBranch_BaseExplore.EastFiveFail" />
         <activity android:name=".EastBranch_BaseExplore.EastFour" />

@@ -7,27 +7,27 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class EndGame extends AppCompatActivity {
-
-    // THIS CORRESPONDS TO final_boss_win(ENDGAME1).png
-
+public class EndGame2 extends AppCompatActivity {
     private Button nextPage;
+
+    // THIS CORRESPONDS TO LAUNCHZONE_ENDLAUNCH(ENDGAME2).png
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_end_game);
+        setContentView(R.layout.activity_end_game2);
+
         nextPage = findViewById(R.id.nextPage);
         nextPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                toEndGame2();
+                toEndGame3();
             }
         });
     }
 
-    public void toEndGame2() {
-        Intent intent = new Intent(this, EndGame2.class);
+    public void toEndGame3() {
+        Intent intent = new Intent(this, EndGame3.class);
         startActivity(intent);
     }
 }

@@ -8,7 +8,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="A terrific explosion"
+        android:text="You Escaped Mars!"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:id="@+id/textView" />
@@ -17,7 +17,7 @@
         android:id="@+id/nextPage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Collect heat resistant nose and head back?"
+        android:text="Start A New Game?"
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true" />
 

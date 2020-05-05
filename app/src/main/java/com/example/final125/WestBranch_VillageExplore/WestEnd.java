@@ -13,6 +13,11 @@ import com.example.final125.R;
 import com.example.final125.HomePage;
 
 public class WestEnd extends AppCompatActivity {
+
+
+    // THIS CORRESPONDS TO west_end_part.png
+
+
     private Button home;
     private void hideSystemUI() {
         // Enables regular immersive mode.
@@ -30,6 +35,7 @@ public class WestEnd extends AppCompatActivity {
                         | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
                         | View.SYSTEM_UI_FLAG_FULLSCREEN);
     }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

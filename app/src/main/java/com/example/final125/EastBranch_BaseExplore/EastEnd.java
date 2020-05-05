@@ -14,6 +14,12 @@ import com.example.final125.HomePage;
 
 public class EastEnd extends AppCompatActivity {
     private Button home;
+
+
+    // THIS CORRESPONDS TO east_end_part.png
+
+
+
     private void hideSystemUI() {
         // Enables regular immersive mode.
         // For "lean back" mode, remove SYSTEM_UI_FLAG_IMMERSIVE.
@@ -35,6 +41,10 @@ public class EastEnd extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_east_end);
         hideSystemUI();
+
+        PlayerInfo.obtainedPartThree();
+
+
         home = findViewById(R.id.backHome);
         home.setOnClickListener(new View.OnClickListener() {
             @Override

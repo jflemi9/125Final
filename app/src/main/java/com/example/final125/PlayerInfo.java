@@ -10,8 +10,8 @@ public class PlayerInfo {
     private static boolean partThree;
     private static boolean partFour;
     private static int oxygenPercentage = -1000;
-    private static final int costOfMovement = 1;
-    private static final int costOfBadEnd = 10;
+    private static int costOfMovement;
+    private static int costOfBadEnd;
 
     PlayerInfo() {
         itemOne = false;
@@ -129,6 +129,25 @@ public class PlayerInfo {
 
     public static int checkOxygenPercentage() {
         return oxygenPercentage;
+    }
+
+    public static void easyMode() {
+        costOfMovement = 1;
+        costOfBadEnd = 5;
+    }
+
+    public static void mediumMode() {
+        costOfMovement = 2;
+        costOfBadEnd = 15;
+    }
+
+    public static void hardMode() {
+        costOfMovement = 3;
+        costOfBadEnd = 30;
+    }
+
+    public static void resetOxygenPercentage() {
+        oxygenPercentage = -1000;
     }
 }
 

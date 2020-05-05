@@ -40,6 +40,26 @@ public class HomePage extends AppCompatActivity {
                         | View.SYSTEM_UI_FLAG_FULLSCREEN);
     }
 
+
+
+    /*
+    LOGIC FOR HOMEPAGE:
+
+    if (Player.checkPartOne()) {
+        use LAUNCHZONE_2.png
+    } else if (Player.checkPartTwo() && Player.checkPartThree()) {
+        use LAUNCHZONE_4.png
+    } else if (Player.checkPartTwo() || Player.checkPartThree()) {
+        use LAUNCHZONE_3.png
+    } else {
+        use LUANCHZONE_1.png
+    }
+
+    Maybe create 4 different xmls and setContentView(R.layout.(SPECIFIED LAUNCHZONE IMAGE) depending on the if statements?
+
+     */
+
+
     @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -16,6 +16,12 @@ public class SouthOne extends AppCompatActivity {
     private Button home;
     private Button proceed;
     private void hideSystemUI() {
+
+
+        // THIS CORRESPONDS TO south_one.png
+
+
+
         // Enables regular immersive mode.
         // For "lean back" mode, remove SYSTEM_UI_FLAG_IMMERSIVE.
         // Or for "sticky immersive," replace it with SYSTEM_UI_FLAG_IMMERSIVE_STICKY
@@ -36,6 +42,9 @@ public class SouthOne extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_south_one);
         hideSystemUI();
+
+        PlayerInfo.obtainedPartTwo();
+
         home = findViewById(R.id.backHome);
         home.setOnClickListener(new View.OnClickListener() {
             @Override

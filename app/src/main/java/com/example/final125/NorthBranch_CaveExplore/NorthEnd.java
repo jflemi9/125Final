@@ -15,6 +15,7 @@ import com.example.final125.HomePage;
 public class NorthEnd extends AppCompatActivity {
     private Button home;
 
+    // THIS CORRESPONDS TO north_end_part.png
 
     private void hideSystemUI() {
         // Enables regular immersive mode.

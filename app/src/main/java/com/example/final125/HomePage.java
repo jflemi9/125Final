@@ -29,9 +29,6 @@ public class HomePage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
 
-        jamesCharles = findViewById(R.id.imageView);
-        jamesCharles.setImageResource(R.drawable.download);
-
         if (PlayerInfo.checkOxygenPercentage() == -1000) {
             final PlayerInfo player = new PlayerInfo();
         }

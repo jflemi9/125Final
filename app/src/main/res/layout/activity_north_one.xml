@@ -7,27 +7,34 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:elevation="@android:dimen/app_icon_size"
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="You picked up a shiny gem!"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:id="@+id/textView" />
+        android:text="You picked up a shiny gem!"
+        android:textColor="#FFFFFF"
+        android:textSize="19dp"/>
 
     <Button
         android:id="@+id/proceed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Proceed Further into the Cave"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true" />
+        android:text="Proceed Further\ninto the Cave"
+        android:layout_marginTop="680dp"/>
 
     <Button
         android:id="@+id/backHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Back to home"
-        android:layout_below="@+id/proceed"
-        android:layout_centerHorizontal="true" />
+        android:layout_marginTop="680dp"
+        android:layout_marginLeft="300dp"
+        android:text="Back to home" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/item1_pretty_gem" />
 
 </RelativeLayout>

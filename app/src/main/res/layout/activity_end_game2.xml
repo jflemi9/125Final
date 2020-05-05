@@ -9,8 +9,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="You've completed the ship! You collect your belongings and quickly check your oxygen supply. You have less than a few minutes of oxygen left!"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
+        android:elevation="@android:dimen/app_icon_size"
+        android:textColor="#FFFFFF"
+        android:textSize="19dp"
         android:id="@+id/textView" />
 
     <Button
@@ -18,7 +19,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Blast Off?"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="221dp" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/launchzone_endgame" />
 
 </RelativeLayout>

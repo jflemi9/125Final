@@ -11,6 +11,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text=""
+        android:elevation="@android:dimen/app_icon_size"
+        android:textColor="#FFFFFF"
+        android:textSize="19dp"
         android:layout_centerHorizontal="true" />
 
     <TextView
@@ -18,6 +21,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="This is your launch-zone. Attempt to explore the region to build your ship and escape this hostile planet. You're running short of time!"
+        android:elevation="@android:dimen/app_icon_size"
+        android:textColor="#FFFFFF"
+        android:textSize="19dp"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/oxygenLevel"/>
 
@@ -74,11 +80,5 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:src="@drawable/launchzone4" />
-
-    <ImageView
-        android:id="@+id/launchEnd"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:src="@drawable/launchzone_endgame" />
 
 </RelativeLayout>

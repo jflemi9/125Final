@@ -14,7 +14,18 @@
         android:elevation="@android:dimen/app_icon_size"
         android:textColor="#FFFFFF"
         android:textSize="19dp"
-        android:id="@+id/textView" />
+        android:id="@+id/textView1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/proceed"
+        android:text="The ruins of your base stand before you. None of your teammates seem to be alive after the last space arachnid attack. You must escape Mars and return home. The hole you cut in the base's wall still remains. You wonder if anything crept in when you were away.. "
+        android:elevation="@android:dimen/app_icon_size"
+        android:textColor="#FFFFFF"
+        android:textSize="19dp"
+        android:id="@+id/textView2" />
+
 
     <Button
         android:id="@+id/proceed"

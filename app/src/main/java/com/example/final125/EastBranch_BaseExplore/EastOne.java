@@ -3,11 +3,14 @@ package com.example.final125.EastBranch_BaseExplore;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.example.final125.GameOver;
+import com.example.final125.NorthBranch_CaveExplore.NorthOne;
 import com.example.final125.PlayerInfo;
 import com.example.final125.R;
 import com.example.final125.HomePage;
@@ -15,6 +18,8 @@ import com.example.final125.HomePage;
 public class EastOne extends AppCompatActivity {
     private Button home;
     private Button proceed;
+    public static MediaPlayer basetheme;
+
     private void hideSystemUI() {
         // Enables regular immersive mode.
         // For "lean back" mode, remove SYSTEM_UI_FLAG_IMMERSIVE.
@@ -36,6 +41,28 @@ public class EastOne extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_east_one);
         hideSystemUI();
+
+        basetheme = MediaPlayer.create(EastOne.this, R.raw.basetheme);
+        basetheme.start();
+
+
+
+        TextView one = findViewById(R.id.textView1);
+        TextView two = findViewById(R.id.textView2);
+
+        one.setVisibility(View.VISIBLE);
+        two.setVisibility(View.INVISIBLE);
+
+        if (PlayerInfo.checkItemThree()) {
+            one.setVisibility(View.INVISIBLE);
+            two.setVisibility(View.VISIBLE);
+        } else {
+            one.setVisibility(View.VISIBLE);
+            two.setVisibility(View.INVISIBLE);
+        }
+
+
+
         home = findViewById(R.id.backHome);
         home.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -79,10 +106,12 @@ public class EastOne extends AppCompatActivity {
     }
     public void returnHome() {
         Intent intent = new Intent(this, HomePage.class);
+        EastOne.basetheme.release();
         startActivity(intent);
     }
     public void gameOver() {
         Intent intent = new Intent(this, GameOver.class);
+        EastOne.basetheme.release();
         startActivity(intent);
     }
 }

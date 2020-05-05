@@ -22,6 +22,7 @@ public class GameOver extends AppCompatActivity {
         startPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                PlayerInfo.resetOxygenPercentage();
                 backToStartPage();
             }
         });

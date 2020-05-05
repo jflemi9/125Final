@@ -14,7 +14,17 @@
         android:textColor="#FFFFFF"
         android:textSize="19dp"
         android:layout_above="@+id/backHome"
-        android:id="@+id/textView" />
+        android:id="@+id/textView1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You're back in the living quarters where you found the ray-gun! Maybe you should find the large 3D printer in the laboratory. Perhaps it could be useful?"
+        android:elevation="@android:dimen/app_icon_size"
+        android:textColor="#FFFFFF"
+        android:textSize="19dp"
+        android:layout_above="@+id/backHome"
+        android:id="@+id/textView2" />
 
     <Button
         android:id="@+id/proceed"

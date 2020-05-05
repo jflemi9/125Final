@@ -9,7 +9,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="The machine hums to life, slowly creating the items you desire. Before long you notice that the 3D printer isn't going to last long. The damage done to it is taking its toll. It spits out a space wings before spluttering to a stop. It is unlikely to work again."
+        android:text="The machine hums to life, slowly creating the items you desire. Before long you notice that the 3D printer isn't going to last long. The damage done to it is taking its toll. It spits out a space wing before spluttering to a stop. It is unlikely to work again."
         android:elevation="@android:dimen/app_icon_size"
         android:textColor="#000000"
         android:textSize="19dp"

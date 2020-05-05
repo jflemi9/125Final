@@ -55,10 +55,13 @@ public class FinalBossFailedPhase4 extends AppCompatActivity {
 
     public void returnHome() {
         Intent intent = new Intent(this, HomePage.class);
+        SouthOne.bosstheme.release();
         startActivity(intent);
     }
+
     public void gameOver() {
         Intent intent = new Intent(this, GameOver.class);
+        SouthOne.bosstheme.release();
         startActivity(intent);
     }
 }

@@ -9,12 +9,22 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="You found a Spare Laser Cutter from a construction site in the village. It looks different from the ones you're used to but it seems to work the same way. Not bad! You notice an older respected alien sitting near a strange machine and looking glum."
+        android:text="You found a spare Laser Cutter from a construction site in the village. It looks different from the ones you're used to but it seems to work the same way. Not bad! You notice an older respected alien sitting near a strange machine and looking glum."
         android:elevation="@android:dimen/app_icon_size"
-        android:textColor="#000000"
+        android:textColor="#E1DBDB"
         android:textSize="19dp"
         android:layout_marginTop="400dp"
-        android:id="@+id/textView" />
+        android:id="@+id/textView1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is where you found the laser cutters from earlier. You notice an older respected alien sitting near a strange machine and looking glum."
+        android:elevation="@android:dimen/app_icon_size"
+        android:textColor="#E1DBDB"
+        android:textSize="19dp"
+        android:layout_marginTop="400dp"
+        android:id="@+id/textView2" />
 
     <Button
         android:id="@+id/proceed"
@@ -36,6 +46,6 @@
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:srcCompat="@drawable/item2_laser_cutter" />
+        app:srcCompat="@drawable/item5_laser_cutter" />
 
 </RelativeLayout>

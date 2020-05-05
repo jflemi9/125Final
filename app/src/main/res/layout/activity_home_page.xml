@@ -12,15 +12,15 @@
         android:layout_height="wrap_content"
         android:text=""
         android:elevation="@android:dimen/app_icon_size"
-        android:textColor="#FFFFFF"
-        android:textSize="19dp"
+        android:textColor="#2C0101"
+        android:textSize="20dp"
         android:layout_centerHorizontal="true" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="This is your launch-zone. Attempt to explore the region to build your ship and escape this hostile planet. You're running short of time!"
+        android:text="This is your launch-zone. Attempt to explore the region to build your ship and escape this hostile planet. You're running short on time!"
         android:elevation="@android:dimen/app_icon_size"
         android:textColor="#FFFFFF"
         android:textSize="19dp"
@@ -31,7 +31,7 @@
         android:id="@+id/goNorth"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="North"
+        android:text="Travel to the Giant Cave"
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true" />
 
@@ -39,21 +39,21 @@
         android:id="@+id/goSouth"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="South"
+        android:text="Travel to the Arachnid's Lair"
         android:layout_below="@+id/goNorth"
         android:layout_centerHorizontal="true" />
     <Button
         android:id="@+id/goEast"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="East"
+        android:text="Travel to your Ruined Base"
         android:layout_below="@+id/goSouth"
         android:layout_centerHorizontal="true" />
     <Button
         android:id="@+id/goWest"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="West"
+        android:text="Travel to the Alien Village"
         android:layout_below="@+id/goEast"
         android:layout_centerHorizontal="true" />
 

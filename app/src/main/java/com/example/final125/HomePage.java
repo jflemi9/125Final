@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -25,6 +26,7 @@ public class HomePage extends AppCompatActivity {
     private ImageView launch2;
     private ImageView launch3;
     private ImageView launch4;
+    private MediaPlayer homeTheme;
 
     private void hideSystemUI() {
         // Enables regular immersive mode.
@@ -49,6 +51,13 @@ public class HomePage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
         hideSystemUI();
+
+        homeTheme = MediaPlayer.create(HomePage.this, R.raw.hometheme);
+        homeTheme.start();
+
+        if (PlayerInfo.checkOxygenPercentage() == -1000) {
+            final PlayerInfo player = new PlayerInfo();
+        }
 
         launch1 = findViewById(R.id.launchOne);
         launch2 = findViewById(R.id.launchTwo);
@@ -77,17 +86,23 @@ public class HomePage extends AppCompatActivity {
             launch4.setVisibility(View.INVISIBLE);
         }
 
-        if (PlayerInfo.checkOxygenPercentage() == -1000) {
-            final PlayerInfo player = new PlayerInfo();
-        }
-
         oxygenPercentage = findViewById(R.id.oxygenLevel);
-        oxygenPercentage.setText(PlayerInfo.checkOxygenPercentage() + "");
+        oxygenPercentage.setText("Oxygen Percent Left: " + PlayerInfo.checkOxygenPercentage());
 
         north = findViewById(R.id.goNorth);
         south = findViewById(R.id.goSouth);
         east = findViewById(R.id.goEast);
         west = findViewById(R.id.goWest);
+
+        if (PlayerInfo.checkPartOne()) {
+            north.setVisibility(View.GONE);
+        }
+        if (PlayerInfo.checkPartTwo()) {
+            east.setVisibility(View.GONE);
+        }
+        if (PlayerInfo.checkPartThree()) {
+            west.setVisibility(View.GONE);
+        }
 
         north.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -135,22 +150,27 @@ public class HomePage extends AppCompatActivity {
     }
     public void advanceNorth() {
         Intent intent = new Intent(this, NorthOne.class);
+        homeTheme.release();
         startActivity(intent);
     }
     public void advanceSouth() {
         Intent intent = new Intent(this, SouthOne.class);
+        homeTheme.release();
         startActivity(intent);
     }
     public void advanceEast() {
         Intent intent = new Intent(this, EastOne.class);
+        homeTheme.release();
         startActivity(intent);
     }
     public void advanceWest() {
         Intent intent = new Intent(this, WestOne.class);
+        homeTheme.release();
         startActivity(intent);
     }
     public void gameOver() {
         Intent intent = new Intent(this, GameOver.class);
+        homeTheme.release();
         startActivity(intent);
     }
 }

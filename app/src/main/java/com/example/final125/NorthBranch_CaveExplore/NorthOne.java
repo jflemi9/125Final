@@ -3,9 +3,11 @@ package com.example.final125.NorthBranch_CaveExplore;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.example.final125.GameOver;
 import com.example.final125.PlayerInfo;
@@ -15,6 +17,7 @@ import com.example.final125.HomePage;
 public class NorthOne extends AppCompatActivity {
     private Button home;
     private Button proceed;
+    public static MediaPlayer cavetheme;
 
     private void hideSystemUI() {
         // Enables regular immersive mode.
@@ -38,8 +41,25 @@ public class NorthOne extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_north_one);
         hideSystemUI();
-        PlayerInfo.obtainedItemOne();
 
+        cavetheme = MediaPlayer.create(NorthOne.this, R.raw.cavetheme);
+        cavetheme.start();
+
+        TextView one = findViewById(R.id.textView1);
+        TextView two = findViewById(R.id.textView2);
+
+        one.setVisibility(View.VISIBLE);
+        two.setVisibility(View.INVISIBLE);
+
+        if (PlayerInfo.checkItemOne()) {
+            one.setVisibility(View.INVISIBLE);
+            two.setVisibility(View.VISIBLE);
+        } else {
+            one.setVisibility(View.VISIBLE);
+            two.setVisibility(View.INVISIBLE);
+        }
+
+        PlayerInfo.obtainedItemOne();
         home = findViewById(R.id.backHome);
         home.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -71,10 +91,12 @@ public class NorthOne extends AppCompatActivity {
     }
     public void returnHome() {
         Intent intent = new Intent(this, HomePage.class);
+        cavetheme.release();
         startActivity(intent);
     }
     public void gameOver() {
         Intent intent = new Intent(this, GameOver.class);
+        cavetheme.release();
         startActivity(intent);
     }
 }

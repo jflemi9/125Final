@@ -7,13 +7,24 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:elevation="@android:dimen/app_icon_size"
         android:textColor="#FFFFFF"
         android:textSize="19dp"
         android:text="You picked up a shiny gem! A large seemingly bottomless abyss faces you. The ominous sounds coming from within guarantee both foes and fortune."
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="450dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="@android:dimen/app_icon_size"
+        android:textColor="#FFFFFF"
+        android:textSize="19dp"
+        android:text="This is where you picked up a shiny gem! A large seemingly bottomless abyss faces you. The ominous sounds coming from within guarantee both foes and fortune."
         android:layout_centerHorizontal="true"
         android:layout_marginTop="450dp" />
 

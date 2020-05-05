@@ -79,10 +79,12 @@ public class WestFour extends AppCompatActivity {
     }
     public void returnHome() {
         Intent intent = new Intent(this, HomePage.class);
+        WestOne.villagetheme.release();
         startActivity(intent);
     }
     public void gameOver() {
         Intent intent = new Intent(this, GameOver.class);
+        WestOne.villagetheme.release();
         startActivity(intent);
     }
 }

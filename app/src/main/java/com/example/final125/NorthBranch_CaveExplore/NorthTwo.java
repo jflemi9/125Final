@@ -79,10 +79,12 @@ public class NorthTwo extends AppCompatActivity {
     }
     public void returnHome() {
         Intent intent = new Intent(this, HomePage.class);
+        NorthOne.cavetheme.release();
         startActivity(intent);
     }
     public void gameOver() {
         Intent intent = new Intent(this, GameOver.class);
+        NorthOne.cavetheme.release();
         startActivity(intent);
     }
 }

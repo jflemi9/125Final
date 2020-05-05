@@ -63,6 +63,7 @@ public class NorthThreeSucceed extends AppCompatActivity {
     }
     public void returnHome() {
         Intent intent = new Intent(this, HomePage.class);
+        NorthOne.cavetheme.release();
         startActivity(intent);
     }
     public void advanceSucceed() {
@@ -71,6 +72,7 @@ public class NorthThreeSucceed extends AppCompatActivity {
     }
     public void gameOver() {
         Intent intent = new Intent(this, GameOver.class);
+        NorthOne.cavetheme.release();
         startActivity(intent);
     }
 }

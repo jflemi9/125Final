@@ -3,6 +3,7 @@ package com.example.final125.SouthBranch_FinalBoss;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -11,10 +12,14 @@ import com.example.final125.GameOver;
 import com.example.final125.PlayerInfo;
 import com.example.final125.R;
 import com.example.final125.HomePage;
+import com.example.final125.WestBranch_VillageExplore.WestOne;
 
 public class SouthOne extends AppCompatActivity {
     private Button home;
     private Button proceed;
+
+    public static MediaPlayer bosstheme;
+
     private void hideSystemUI() {
 
 
@@ -43,7 +48,8 @@ public class SouthOne extends AppCompatActivity {
         setContentView(R.layout.activity_south_one);
         hideSystemUI();
 
-        PlayerInfo.obtainedPartTwo();
+        bosstheme = MediaPlayer.create(SouthOne.this, R.raw.bosstheme);
+        bosstheme.start();
 
         home = findViewById(R.id.backHome);
         home.setOnClickListener(new View.OnClickListener() {
@@ -77,11 +83,13 @@ public class SouthOne extends AppCompatActivity {
 
     public void returnHome() {
         Intent intent = new Intent(this, HomePage.class);
+        SouthOne.bosstheme.release();
         startActivity(intent);
     }
 
     public void gameOver() {
         Intent intent = new Intent(this, GameOver.class);
+        SouthOne.bosstheme.release();
         startActivity(intent);
     }
 }

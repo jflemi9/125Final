@@ -8,7 +8,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="The Arachnid sees you and charges. I fancies an easy meal! You are almost paralysed with fear"
+        android:text="The Arachnid sees you and charges. It fancies an easy meal! You are almost paralysed with fear"
         android:elevation="@android:dimen/app_icon_size"
         android:textColor="#FFFFFF"
         android:textSize="19dp"

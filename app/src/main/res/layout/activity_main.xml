@@ -9,7 +9,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welcome to the EscapeFromMars!"
+        android:text="Welcome to the game:\n  Escape From Mars!"
         android:elevation="@android:dimen/app_icon_size"
         android:textColor="#000000"
         android:textSize="19dp"

@@ -7,6 +7,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.final125.NorthBranch_CaveExplore.NorthOne;
+import com.example.final125.SouthBranch_FinalBoss.SouthOne;
+
 public class EndGame3 extends AppCompatActivity {
 
     // THIS CORRESPONDS TO END_GAME3.png
@@ -45,6 +48,7 @@ public class EndGame3 extends AppCompatActivity {
     }
     public void toStart() {
         Intent intent = new Intent(this, MainActivity.class);
+        SouthOne.bosstheme.release();
         startActivity(intent);
     }
 }

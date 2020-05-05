@@ -14,15 +14,26 @@
         android:textColor="#FFFFFF"
         android:textSize="19dp"
         android:layout_marginTop="350dp"
-        android:id="@+id/textView" />
+        android:id="@+id/textView1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A large alien village lies ahead. The village guard you befriended earlier stands ahead. The alien villagers seem to have taken a liking to you. You should be able to freely pass."
+        android:elevation="@android:dimen/app_icon_size"
+        android:textColor="#FFFFFF"
+        android:textSize="19dp"
+        android:layout_marginTop="350dp"
+        android:id="@+id/textView2" />
 
     <Button
         android:id="@+id/proceed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Attempt to wak past him"
+        android:text="Attempt to walk past him"
         android:layout_marginTop="600dp"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" />
 
     <Button
         android:id="@+id/backHome"

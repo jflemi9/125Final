@@ -62,6 +62,7 @@ public class WestFiveSucceed extends AppCompatActivity {
     }
     public void returnHome() {
         Intent intent = new Intent(this, HomePage.class);
+        WestOne.villagetheme.release();
         startActivity(intent);
     }
     public void advanceSucceed() {
@@ -70,6 +71,7 @@ public class WestFiveSucceed extends AppCompatActivity {
     }
     public void gameOver() {
         Intent intent = new Intent(this, GameOver.class);
+        WestOne.villagetheme.release();
         startActivity(intent);
     }
 }

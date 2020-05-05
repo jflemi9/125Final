@@ -68,6 +68,7 @@ public class FinalBossPhase3 extends AppCompatActivity {
 
     public void gameOver() {
         Intent intent = new Intent(this, GameOver.class);
+        SouthOne.bosstheme.release();
         startActivity(intent);
     }
 }

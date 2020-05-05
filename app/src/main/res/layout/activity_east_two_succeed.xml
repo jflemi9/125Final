@@ -7,11 +7,21 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:elevation="@android:dimen/app_icon_size"
         android:text="You cut your way in using your new Laser Cutters! Your footsteps echo through the now ghostly halls. You long for the days when they were filled with cheer."
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="500dp"
+        android:textSize="19dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="@android:dimen/app_icon_size"
+        android:text="Fearing an ambush you cut another hole into the base at a different location! Your footsteps echo through the now ghostly halls. You long for the days when they were filled with cheer."
         android:textColor="#FFFFFF"
         android:layout_marginTop="500dp"
         android:textSize="19dp" />

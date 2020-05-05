@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.example.final125.GameOver;
 import com.example.final125.PlayerInfo;
@@ -36,6 +37,22 @@ public class EastThree extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_east_three);
         hideSystemUI();
+
+        TextView one = findViewById(R.id.textView1);
+        TextView two = findViewById(R.id.textView2);
+
+        one.setVisibility(View.VISIBLE);
+        two.setVisibility(View.INVISIBLE);
+
+        if (PlayerInfo.checkItemTwo()) {
+            one.setVisibility(View.INVISIBLE);
+            two.setVisibility(View.VISIBLE);
+        } else {
+            one.setVisibility(View.VISIBLE);
+            two.setVisibility(View.INVISIBLE);
+        }
+
+
         PlayerInfo.obtainedItemThree();
 
         home = findViewById(R.id.backHome);

@@ -10,17 +10,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="There is not nearly enough power to allow for stable power distribution. The experiment goes horribly wrong! You are zapped by the machine. Thank goodness it isn't at full power."
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
+        android:elevation="@android:dimen/app_icon_size"
+        android:textColor="#FFFFFF"
+        android:textSize="19dp"
+        android:layout_marginTop="580dp"
         android:id="@+id/textView" />
 
     <Button
         android:id="@+id/backHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Collect your belongings and head back to Launch-zone "
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true" />
+        android:text="Collect your belongings and head back to the launch zone"
+        android:layout_alignParentBottom="true" />
 
     <ImageView
         android:id="@+id/imageView"

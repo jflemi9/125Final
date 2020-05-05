@@ -10,25 +10,27 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="The 3D Printer Hums to life! The nuclear powered battery is a perfect substitute! Perhaps you can print space-wings now?"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
+        android:elevation="@android:dimen/app_icon_size"
+        android:textColor="#FFFFFF"
+        android:textSize="19dp"
+        android:layout_marginTop="560dp"
         android:id="@+id/textView" />
 
     <Button
         android:id="@+id/proceed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Enter Specifications for a space-wing."
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true" />
+        android:text="Enter Specifications \nfor a space-wing."
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" />
 
     <Button
         android:id="@+id/backHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Return to Launch-zone"
-        android:layout_below="@+id/proceed"
-        android:layout_centerHorizontal="true" />
+        android:text="Back to \nLaunch-zone"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" />
 
     <ImageView
         android:id="@+id/imageView"

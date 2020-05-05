@@ -10,8 +10,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Success! The nuclear power you have acquired is a perfect solution to stabilize the distributor. The village elder is incredibly pleased and offers up a gift."
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
+        android:elevation="@android:dimen/app_icon_size"
+        android:textColor="#FFFFFF"
+        android:textSize="19dp"
+        android:layout_marginTop="400dp"
         android:id="@+id/textView" />
 
     <Button
@@ -19,7 +21,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Accept his token of thanks!"
-        android:layout_below="@+id/textView"
+        android:layout_marginTop="500dp"
         android:layout_centerHorizontal="true" />
 
     <Button

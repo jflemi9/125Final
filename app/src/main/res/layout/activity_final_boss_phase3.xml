@@ -10,8 +10,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Laser cutter in hand you are able to cut through the invisible arachnid webs that claimed many of your friends. The arachnid has beaten off the guard and is turning to face you."
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
+        android:elevation="@android:dimen/app_icon_size"
+        android:textColor="#FFFFFF"
+        android:textSize="19dp"
+        android:layout_marginTop="550dp"
         android:id="@+id/textView" />
 
     <Button
@@ -19,7 +21,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Time to attack!"
-        android:layout_below="@+id/textView"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/final_boss_phase3" />
 
 </RelativeLayout>

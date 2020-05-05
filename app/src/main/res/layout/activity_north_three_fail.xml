@@ -11,16 +11,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="You were overwhelmed by the monkeys! You never stood a chance without a weapon."
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
+        android:elevation="@android:dimen/app_icon_size"
+        android:textColor="#FFFFFF"
+        android:textSize="19dp"
+        android:layout_marginTop="50dp"
         android:id="@+id/textView" />
 
     <Button
         android:id="@+id/backHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Scurry back to Launch-Zone"
-        android:layout_below="@+id/textView"
+        android:text="Scurry back to \nLaunch-Zone"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
         android:layout_centerHorizontal="true" />
 
     <ImageView

@@ -7,28 +7,30 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:elevation="@android:dimen/app_icon_size"
         android:text="You cut your way in using your new Laser Cutters! Your footsteps echo through the now ghostly halls. You long for the days when they were filled with cheer."
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:id="@+id/textView" />
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="500dp"
+        android:textSize="19dp" />
 
     <Button
         android:id="@+id/proceed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Explore your ruined base!"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"/>
 
     <Button
         android:id="@+id/backHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Return to Launch-zone"
-        android:layout_below="@+id/proceed"
-        android:layout_centerHorizontal="true" />
+        android:text="Back to \nLaunch-zone"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" />
 
     <ImageView
         android:id="@+id/imageView"

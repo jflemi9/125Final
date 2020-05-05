@@ -9,26 +9,27 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/proceed"
         android:text="The ruins of your base stand before you. None of your teammates seem to be alive after the last space arachnid attack. You must escape Mars and return home. The Base seems to still be on alarm mode"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
+        android:elevation="@android:dimen/app_icon_size"
+        android:textColor="#FFFFFF"
+        android:textSize="19dp"
         android:id="@+id/textView" />
 
     <Button
         android:id="@+id/proceed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Attempt to enter through the emergency entrance"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true" />
+        android:text="Attempt to enter through \nthe emergency entrance"
+        android:layout_alignParentBottom="true"/>
 
     <Button
         android:id="@+id/backHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Back to Launch-zone"
-        android:layout_below="@+id/proceed"
-        android:layout_centerHorizontal="true" />
+        android:text="Back to \nLaunch-zone"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" />
 
     <ImageView
         android:id="@+id/imageView"

@@ -22,4 +22,8 @@
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true" />
 
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
 </RelativeLayout>

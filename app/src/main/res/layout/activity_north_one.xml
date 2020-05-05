@@ -21,16 +21,17 @@
         android:id="@+id/proceed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Proceed Further into the Cave?"
-        android:layout_marginTop="680dp"/>
+        android:text="Proceed Further \ninto the Cave?"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"/>
 
     <Button
         android:id="@+id/backHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="680dp"
-        android:layout_marginLeft="300dp"
-        android:text="Back to Launch-zone" />
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:text="Back to \nLaunch-zone" />
 
     <ImageView
         android:id="@+id/imageView"

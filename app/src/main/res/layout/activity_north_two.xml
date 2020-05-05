@@ -21,16 +21,17 @@
         android:id="@+id/proceed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="680dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
         android:text="Proceed with caution" />
 
     <Button
         android:id="@+id/backHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Back to Launch-zone"
+        android:text="Back to \nLaunch-zone"
         android:layout_alignParentRight="true"
-        android:layout_marginTop="680dp"/>
+        android:layout_alignParentBottom="true"/>
 
     <ImageView
         android:id="@+id/imageView"

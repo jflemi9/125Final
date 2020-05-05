@@ -9,8 +9,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="With nervous fingers you quickly press the button activating the nuclear warhead that comes hurtling from the launch-zone. You had been planning this ever since you saw the plutonium in the cave. Revenge for your friends. The explosion that follows nearly knocks you out. You collect yourself and watch the mushroom cloud beginning to form"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
+        android:elevation="@android:dimen/app_icon_size"
+        android:textColor="#FFFFFF"
+        android:textSize="19dp"
+        android:layout_marginTop="400dp"
         android:id="@+id/textView" />
 
     <Button
@@ -18,7 +20,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Collect heat resistant nose and head back to launch-zone"
-        android:layout_below="@+id/textView"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/final_boss_win_endgame1" />
 
 </RelativeLayout>

@@ -9,8 +9,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="You hardly take 20 steps when you suddenly feel immobilized. The arachnids invisible webs slowly materialize. You fell for the arachnids trap. You begin to panic."
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
+        android:elevation="@android:dimen/app_icon_size"
+        android:textColor="#FFFFFF"
+        android:textSize="19dp"
+        android:layout_marginTop="100dp"
         android:id="@+id/textView" />
 
     <Button
@@ -18,7 +20,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Black out!"
-        android:layout_below="@+id/textView"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/final_boss_phase2_fail" />
 
 </RelativeLayout>

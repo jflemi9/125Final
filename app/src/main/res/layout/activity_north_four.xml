@@ -10,8 +10,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="You found plutonium crystals! They glow ominously with unlimited energy. Perhaps this is your ticket out of this planet?"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
+        android:elevation="@android:dimen/app_icon_size"
+        android:textColor="#FFFFFF"
+        android:textSize="19dp"
+        android:layout_marginTop="50dp"
         android:id="@+id/textView" />
 
     <Button
@@ -19,16 +21,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Mine the plutonium?"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" />
 
     <Button
         android:id="@+id/backHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Back to Launch-Zone"
-        android:layout_below="@+id/proceed"
-        android:layout_centerHorizontal="true" />
+        android:text="Back to \nLaunch-Zone"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
 
     <ImageView
         android:id="@+id/imageView"

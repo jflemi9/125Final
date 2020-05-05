@@ -10,17 +10,26 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="The machine hums to life, slowly creating the items you desire. Before long you notice that the 3D printer isn't going to last long. The damage done to it is taking its toll. It spits out a space wings before spluttering to a stop. It is unlikely to work again."
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
+        android:elevation="@android:dimen/app_icon_size"
+        android:textColor="#000000"
+        android:textSize="19dp"
+        android:layout_marginTop="30dp"
         android:id="@+id/textView" />
 
     <Button
         android:id="@+id/backHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Back to Launch Site"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true" />
+        android:text="Back to \nLaunch site"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/east_end_part" />
+
 
 
 </RelativeLayout>

@@ -10,8 +10,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="You found a Spare Laser Cutter from a construction site in the village. It looks different from the ones you're used to but it seems to work the same way. Not bad! You notice an older respected alien sitting near a strange machine and looking glum."
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
+        android:elevation="@android:dimen/app_icon_size"
+        android:textColor="#000000"
+        android:textSize="19dp"
+        android:layout_marginTop="400dp"
         android:id="@+id/textView" />
 
     <Button
@@ -19,16 +21,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Visit the village elder"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" />
 
     <Button
         android:id="@+id/backHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Back to Launch-zone"
-        android:layout_below="@+id/proceed"
-        android:layout_centerHorizontal="true" />
+        android:text="Back to \nLaunch-zone"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" />
 
     <ImageView
         android:id="@+id/imageView"

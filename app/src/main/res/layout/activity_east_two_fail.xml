@@ -7,20 +7,22 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/backHome"
+        android:elevation="@android:dimen/app_icon_size"
         android:text="The Emergency System is Triggered and initiates defensive fire! You sprint away before diving into a ditch with bullets whizzing above you. These cannons may be a slight nuisance to space arachnids but they could seriously harm you."
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:id="@+id/textView" />
+        android:textColor="#FFFFFF"
+        android:textSize="19dp" />
 
     <Button
         android:id="@+id/backHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Crawl back to Launch-zone"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
 
     <ImageView
         android:id="@+id/imageView"

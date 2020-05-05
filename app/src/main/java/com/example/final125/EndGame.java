@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class EndGame extends AppCompatActivity {
 
-    // THIS CORRESPONDS TO final_boss_win(ENDGAME1).png
+    // THIS CORRESPONDS TO final_boss_win_endgame1.png
 
     private Button nextPage;
 

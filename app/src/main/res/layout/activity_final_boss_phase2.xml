@@ -1,25 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:app="http://schemas.android.com/apk/res-auto"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-tools:context=".MainActivity">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
 
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="All of a sudden you hear a cry! A guard who you gifted the pretty gem to has arrived to give you backup. You snap out of your daze and are forced into action."
-    android:layout_centerHorizontal="true"
-    android:layout_centerVertical="true"
-    android:id="@+id/textView" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="All of a sudden you hear a cry! A guard who you gifted the pretty gem to has arrived to give you backup. You snap out of your daze and are forced into action."
+        android:elevation="@android:dimen/app_icon_size"
+        android:textColor="#FFFFFF"
+        android:textSize="19dp"
+        android:id="@+id/textView" />
 
-<Button
-    android:id="@+id/proceed"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Attempt to flank the spider!"
-    android:layout_below="@+id/textView"
-    android:layout_centerHorizontal="true" />
+    <Button
+        android:id="@+id/proceed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Attempt to flank the spider!"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/final_boss_phase2" />
+
 
 </RelativeLayout>

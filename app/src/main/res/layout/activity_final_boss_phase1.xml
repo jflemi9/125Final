@@ -9,8 +9,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="The Arachnid sees you and charges. I fancies an easy meal! You are almost paralysed with fear"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
+        android:elevation="@android:dimen/app_icon_size"
+        android:textColor="#FFFFFF"
+        android:textSize="19dp"
+        android:layout_marginTop="500dp"
         android:id="@+id/textView" />
 
     <Button
@@ -18,7 +20,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="You have to improvise!"
-        android:layout_below="@+id/textView"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/final_boss_phase1" />
 </RelativeLayout>

@@ -10,8 +10,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hoping you can appease them with gifts, you fish into your pocket and bring out the shiny gem you found at the mouth of the cave. The guard's face instantly lights up! They greedily grab the gem before letting you pass."
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
+        android:elevation="@android:dimen/app_icon_size"
+        android:textColor="#FFFFFF"
+        android:textSize="19dp"
         android:id="@+id/textView" />
 
     <Button
@@ -19,16 +20,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Continue into the Village"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" />
 
     <Button
         android:id="@+id/backHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Return to Launch-zone"
-        android:layout_below="@+id/proceed"
-        android:layout_centerHorizontal="true" />
+        android:text="Back to \nLaunch-zone"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" />
 
     <ImageView
         android:id="@+id/imageView"

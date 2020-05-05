@@ -57,36 +57,36 @@ public class HomePage extends AppCompatActivity {
         launch4 = findViewById(R.id.launchFour);
         launchEnd = findViewById(R.id.launchEnd);
 
-        launch1.setVisibility(View.INVISIBLE);
+        launch1.setVisibility(View.VISIBLE);
         launch2.setVisibility(View.INVISIBLE);
         launch3.setVisibility(View.INVISIBLE);
         launch4.setVisibility(View.INVISIBLE);
         launchEnd.setVisibility(View.INVISIBLE);
 
         if (PlayerInfo.checkPartOne() && !PlayerInfo.checkPartTwo()) {
-            launch1.setVisibility(View.VISIBLE);
-            launch2.setVisibility(View.INVISIBLE);
-            launch3.setVisibility(View.INVISIBLE);
-            launch4.setVisibility(View.INVISIBLE);
-            launchEnd.setVisibility(View.INVISIBLE);
-        } else if (PlayerInfo.checkPartTwo() && PlayerInfo.checkPartOne() && !PlayerInfo.checkPartThree()) {
             launch1.setVisibility(View.INVISIBLE);
             launch2.setVisibility(View.VISIBLE);
             launch3.setVisibility(View.INVISIBLE);
             launch4.setVisibility(View.INVISIBLE);
             launchEnd.setVisibility(View.INVISIBLE);
-        } else if (PlayerInfo.checkPartThree() && !PlayerInfo.checkPartFour()) {
+        } else if (PlayerInfo.checkPartTwo() && PlayerInfo.checkPartOne() && !PlayerInfo.checkPartThree()) {
             launch1.setVisibility(View.INVISIBLE);
             launch2.setVisibility(View.INVISIBLE);
             launch3.setVisibility(View.VISIBLE);
             launch4.setVisibility(View.INVISIBLE);
             launchEnd.setVisibility(View.INVISIBLE);
-        } else if (PlayerInfo.checkPartFour()) {
+        } else if (PlayerInfo.checkPartThree() && !PlayerInfo.checkPartFour()) {
             launch1.setVisibility(View.INVISIBLE);
             launch2.setVisibility(View.INVISIBLE);
             launch3.setVisibility(View.INVISIBLE);
             launch4.setVisibility(View.VISIBLE);
             launchEnd.setVisibility(View.INVISIBLE);
+        } else if (PlayerInfo.checkPartFour()) {
+            launch1.setVisibility(View.INVISIBLE);
+            launch2.setVisibility(View.INVISIBLE);
+            launch3.setVisibility(View.INVISIBLE);
+            launch4.setVisibility(View.INVISIBLE);
+            launchEnd.setVisibility(View.VISIBLE);
         }
 
         if (PlayerInfo.checkOxygenPercentage() == -1000) {
